@@ -52,3 +52,12 @@ body{
 	animation-name: enter;
 	animation-duration: 3s;
 }
+#man{
+	bottom: 10vh;
+	margin: 0 48%;
+	position: absolute;
+	z-index: 1;
+	width: 4%;
+	height: auto;
+	
+}
