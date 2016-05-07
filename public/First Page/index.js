@@ -6,6 +6,6 @@ $(document).ready(function(){
 			bottom: "0"
 			
 		}, 3000);
-		
+		$("#man").fadeOut(3000);
 	})
 });
