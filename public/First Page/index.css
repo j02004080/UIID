@@ -14,13 +14,13 @@ body{
 	
 }
 
-#title, #buttondiv{
+#titlediv, #buttondiv{
 	height: 25vh;
 	
 }
-#title img{
-	margin: 5vh 25%;
-	width: 50%;
+#title{
+	margin: 5vh 15%;
+	width: 70%;
 	height: auto;
 	border-radius: 25px;
 }
@@ -34,8 +34,8 @@ body{
 
 #house{
 	bottom: 10vh;
-	margin: 0 40%;
-	width: 20%;
+	margin: 0 30%;
+	width: 40%;
 	height: auto;
 	position: absolute;
 	

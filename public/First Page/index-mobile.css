@@ -35,21 +35,20 @@ body{
 	height: auto;	  
 }
 #animationdiv{
- 
-  
-  border: black 2px solid;
   height: 50vh;
+  
 }
 #house{
-  top: 35vh;
-	bottom: 3vh;
-	margin: 0 15%;
-	width: 70%;
+  position: absolute;
+	bottom: 5vh;
+	margin: 0 0;
+	width: 100%;
 	height: auto;
 }
 
 #man{
-	bottom: 3vh;
+  position: absolute;
+	bottom: 5vh;
 	margin: 0 45%;
 	z-index: 1;
 	width: 10%;
