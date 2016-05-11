@@ -6,6 +6,10 @@ $(document).ready(function(){
 			bottom: "0"
 			
 		}, 3000);
+    
+    /*setTimeout(function(){
+      location.assign('http://luffy.ee.ncku.edu.tw:8108/GamePage');
+    }, 3500);*/
 		$("#man").fadeOut(3000);
 	})
 });
