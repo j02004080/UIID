@@ -4,7 +4,7 @@ var path = require('path');
 var app = express();
 var fs = require('fs');
 
-app.listen(8108, function(){
+app.listen(8107, function(){
 
   console.log('server run');
 });
@@ -16,8 +16,8 @@ app.get('/' ,function(req, res){
 app.get('/First Page',function(req,res){
   res.sendFile('index.html');
 });
-app.get('/GamePage', function(req, res){
-  res.sendFile('/GamePage/GamePage.html');
+app.get('/main', function(req, res){
+  res.sendFile(__dirname + '/public/main/lobby.html');
 });
 
 app.use(bodyParser.json());
