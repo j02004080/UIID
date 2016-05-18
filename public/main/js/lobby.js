@@ -62,10 +62,80 @@
             //window.localStroage["str"] = str;   
         }
 $(document).ready(function() {
+    
+    var ani_time = 500;
+
     $('.flexslider').flexslider({
     animation: "slide"
     });            
         timedCount();
         
         window.onbeforeunload = saveToStorage();
+    $(".mapbut").click(function(){
+      go("map");
+    });
+    $(".misbut").click(function(){
+      go("mission");
+    });
+    $(".collectbut").click(function(){
+      go("collect");
+    });
+
+    var calldone = false;
+
+    function go(id){
+      
+      if (id === "map"){
+         if (calldone === false){
+                  $("#map").show();
+                  calldone = true;
+                  $("#map").animate({
+                    top: "20vh",
+                    margin: "0 0",
+                    width: "85vw",
+                    height: "50vh"
+         
+                  }, ani_time);
+         
+                }else{
+                  $("#map").animate({
+                    top: "1.5vh",
+                    margin: "0 0",
+                    width: "5px",
+                    height: "5px"
+                  }, ani_time);
+                  calldone = false;
+                  setTimeout(function(){
+                    $("#map").hide();
+                  }, ani_time);
+                }
+
+      }else if(id==="mission"){
+        if (calldone === false){
+                           $("#mis").show();
+                           calldone = true;
+                           $("#mis").animate({
+                             top: "20vh",
+                             margin: "0 0",
+                             width: "85vw",
+                             height: "50vh"
+        
+                           }, ani_time);
+        
+                         }else{
+                           $("#mis").animate({
+                             top: "1.5vh",
+                             margin: "0 0",
+                             width: "5px",
+                             height: "5px"
+                           }, ani_time);
+                           calldone = false;
+                           setTimeout(function(){
+                             $("#mis").hide();
+                           }, ani_time);
+                         }
+
+      }
+    
+    }
 });

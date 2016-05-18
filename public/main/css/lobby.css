@@ -49,6 +49,29 @@ body{
 .flexslider{
     text-align: center;
 }
+.stuff{
+    position: absolute;
+    top: 1.5vh;
+    z-index: 1;
+    border: black 1px solid;
+    
+    height: 5px;
+    width: 5px;
+}
+#map{
+  left: 8vw;
+}
+#mis{
+    left: 16vw;
+    border: black 2px solid;
+}
+#collect{
+    left: 24vw;
+}
+#map img{
+    max-height: 100%;
+    max-width: 100%;
+}
 /*
 .setmenu{
     
