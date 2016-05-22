@@ -7,11 +7,16 @@
     
     body{
         background-image: url("../img/background.png");
-        background-size: contain;
+        background-size: cover;
         overflow: hidden;
     }
 
+    #clock{
+        display: none;
+    }
+    
     .mapbut{
+        
         height: 7% ;
         width: 7% ;
         border-radius: 50%;
@@ -31,9 +36,9 @@
     }
 
 
-    .str1{
+    .str3{
         position:absolute;
-        top:5%;
+        top:1%;
         right:5%;
         height:5% ;
         width: 10%;
@@ -41,23 +46,187 @@
 
     .str2{
         position:absolute;
-        top:5%;
+        top:1%;
         right:15%;
         height:5% ;
         width: 10%;
     }
 
-    .str3{
+    .str1{
         position:absolute;
-        top:5%;
+        top:1%;
         right:25%;
         height:5% ;
         width: 10%;
     }
+    /*----------------setMenu--------------------------*/
+    .setMenu{
+        position: absolute;
+        background-image: url("../img/menu.png");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        left:10%;
+        top :-77%;
+        width: 80%;
+        height: 83%;
+        z-index: 6;
+        cursor: pointer;
+    
+    }
+    #s1{
+        position:absolute;
+        left:8%;
+        top:15%;
+        font-size: 220%;
+        font-weight: 1200;
+    }
+    
+    #s2{
+        position:absolute;
+        left:8%;
+        top:27%;
+        font-size: 220%;
+    }
+    
+    #s3{
+        position: absolute;
+        left:28%;
+        bottom:42%;
+        font-size: 220%;
+    }
+    
+    #s4{
+        position: absolute;
+        left:28%;
+        bottom: 24%;
+        font-size: 220%;
+    }
+    
+    .ON1{
+        position:absolute;
+        right:32%;
+        top:18.5%;
+        width: 10%;
+        z-index: 4;
+    }
+    
+    .OFF1{
+        position:absolute;
+        right:14%;
+        top:18.5%;
+        width: 13%;
+        z-index: 4;
+    }
+    
+    .ON2{
+        position:absolute;
+        right:32%;
+        top:30%;
+        width: 10%;
+        z-index: 4;
+    }
+    
+    .OFF2{
+        position:absolute;
+        right:14%;
+        top:30%;
+        width: 13%;
+        z-index: 4;
+    }
+    
+    .button1{
+        position:absolute;
+        width:16%;
+        right:28%;
+        top:17%;
+        z-index: 3;
+    }
+    
+    .button2{
+        position:absolute;
+        width:16%;
+        right:28%;
+        top:28.5%;
+        z-index: 3;
+    }
+    
+    .button3{
+        position:absolute;
+        width: 50%;
+        left:25%;
+        bottom: 25%;
+        
+    }
+    
+    .button4{
+        position:absolute;
+        width: 50%;
+        left:25%;
+        bottom: 43%;
+        
+    }
+    
     .flexslider{
         text-align: center;
+        height: 10%;
+        width: 100%;
+    }
+    
+     #player{
+        position: absolute;
+        height: 20%;
+        width: 20%;
+        bottom:10%;
+        left:0%;
+        width: auto;
+        z-index: 4;
+    }
+    
+/*Jan*/
+    #jan{
+        position:relative;
+        left:0%;
+        width: 100%;
+        background-image: url("../Scenes/Jan-background.png");
+    }
+    
+    
+    #jan-o{       
+        position:relative;
+        width:auto; 
+        z-index: 3;
+    }
+    
+    #jan-r{
+        position: absolute;
+        top:35%;
+        left:0%;
+        width: auto;
+        z-index: 4;
     }
 
+    /*Fu*/
+    #fu{
+        position:relative;
+        left:0%;
+        width: 110%;
+        background-image: url("../Scenes/Fu-background.png");
+    }
+    
+    
+    #fu-o{       
+        position:relative;
+        width:auto; 
+        z-index: 3;
+    }
+    
+    #fu-r{
+        position: absolute;
+        top:30%;
+        left:0%;
+        width: auto;
+        z-index: 4;
+    }
 }
 
 
@@ -71,7 +240,12 @@
         background-image: url("../img/background.png");
         background-size: cover;
     }
-
+    
+    #clock{
+        position:absolute;
+        right:20%;
+        top:12%
+    }
     .mapbut{
         height: 7% ;
         width: 7% ;
@@ -92,7 +266,8 @@
     }
 
 
-    .str1{
+
+    .str3{
         position:absolute;
         top:5%;
         right:5%;
@@ -108,17 +283,192 @@
         width: 10%;
     }
 
-    .str3{
+    .str1{
         position:absolute;
         top:5%;
         right:25%;
         height:5% ;
         width: 10%;
     }
-    .flexslider{
-        text-align: center;
+    /*-----------------setMenu------------------*/
+    .setMenu{
+        position: absolute;
+        background-image: url("../img/menu.png");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        left:35%;
+        top :-77%;
+        width: 25%;
+        height: 83%;
+        z-index: 6;
+        cursor: pointer;
+    
     }
+    #s1{
+        position:absolute;
+        left:8%;
+        top:15%;
+        font-size: 250%;
+        font-weight: 1200;
+    }
+    
+    #s2{
+        position:absolute;
+        left:8%;
+        top:27%;
+        font-size: 250%;
+    }
+    
+    #s3{
+        position: absolute;
+        left:28%;
+        bottom:42%;
+        font-size: 250%;
+    }
+    
+    #s4{
+        position: absolute;
+        left:28%;
+        bottom: 24%;
+        font-size: 250%;
+    }
+    
+    .ON1{
+        position:absolute;
+        right:32%;
+        top:18.5%;
+        width: 10%;
+        z-index: 4;
+    }
+    
+    .OFF1{
+        position:absolute;
+        right:14%;
+        top:18.5%;
+        width: 13%;
+        z-index: 4;
+    }
+    
+    .ON2{
+        position:absolute;
+        right:32%;
+        top:30%;
+        width: 10%;
+        z-index: 4;
+    }
+    
+    .OFF2{
+        position:absolute;
+        right:14%;
+        top:30%;
+        width: 13%;
+        z-index: 4;
+    }
+    
+    .button1{
+        position:absolute;
+        width:16.5%;
+        right:28%;
+        top:16.5%;
+        z-index: 3;
+    }
+    
+    .button2{
+        position:absolute;
+        width:16.5%;
+        right:28%;
+        top:28%;
+        z-index: 3;
+    }
+    
+    .button3{
+        position:absolute;
+        width: 50%;
+        left:25%;
+        bottom: 25%;
+        
+    }
+    
+    .button4{
+        position:absolute;
+        width: 50%;
+        left:25%;
+        bottom: 43%;
+        
+    }
+    .flexslider{
+        left:35%;
+        width: 25%;
+        height: 50%;
+    }
+    
+   
+        
+   
+    
+    #player{
+        position: absolute;
+        height: 20%;
+        width: 20%;
+        bottom:15%;
+        left:35%;
+        width: auto;
+        z-index: 4;
+    }
+    
+/*Jan*/
+    #jan{
+        position:relative;
+        left:0%;
+        width: 100%;
+        background-image: url("../Scenes/Jan-background.png");
+    }
+    
+    
+    #jan-o{       
+        position:relative;
+        width:auto; 
+        z-index: 3;
+    }
+    
+    #jan-r{
+        position: absolute;
+        top:35%;
+        left:0%;
+        width: auto;
+        z-index: 4;
+    }
+    
+    
 
+/*Fu*/
+    #fu{
+        position:relative;
+        left:0%;
+        width: 100%;
+        
+        background-image: url("../Scenes/Fu-background.png");
+    }
+    
+    
+    #fu-o{       
+        position:relative;
+        width:auto; 
+        z-index: 3;
+    }
+    
+    #fu-r{
+        position: absolute;
+        top:30%;
+        left:0%;
+        width: auto;
+        z-index: 4;
+    }
+    
+   
+
+
+    
 }
 
 /*
