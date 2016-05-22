@@ -90,11 +90,11 @@ $(document).ready(function() {
                   $("#map").show();
                   calldone = true;
                   $("#map").animate({
-                    top: "20vh",
-                    margin: "0 0",
-                    width: "85vw",
-                    height: "50vh"
-         
+                    top: "10vh",
+                    margin: "0 2%",
+                    width: "80vw",
+                    height: "90vh"
+                     
                   }, ani_time);
          
                 }else{
@@ -115,11 +115,11 @@ $(document).ready(function() {
                            $("#mis").show();
                            calldone = true;
                            $("#mis").animate({
-                             top: "20vh",
-                             margin: "0 0",
-                             width: "85vw",
-                             height: "50vh"
-        
+                             top: "15vh",
+                             margin: "0 2%",
+                             width: "80vw",
+                             height: "75vh",
+                              left: "8vw" 
                            }, ani_time);
         
                          }else{
@@ -127,13 +127,43 @@ $(document).ready(function() {
                              top: "1.5vh",
                              margin: "0 0",
                              width: "5px",
-                             height: "5px"
+                             height: "5px",
+                             left: "16vw"
                            }, ani_time);
                            calldone = false;
                            setTimeout(function(){
                              $("#mis").hide();
                            }, ani_time);
                          }
+
+      }
+    
+      else if(id==="collect"){
+       if (calldone === false){
+                           $("#collect").show();
+                           calldone = true;
+                           $("#collect").animate({
+                             top: "20vh",
+                             margin: "0 0",
+                             width: "85vw",
+                             height: "50vh",
+                              left: "8vw" 
+                           }, ani_time);
+        
+                         }else{
+                           $("#collect").animate({
+                             top: "1.5vh",
+                             margin: "0 0",
+                             width: "5px",
+                             height: "5px",
+                             left: "24vw"
+                           }, ani_time);
+                           calldone = false;
+                           setTimeout(function(){
+                             $("#collect").hide();
+                           }, ani_time);
+                         }
+      
 
       }
     

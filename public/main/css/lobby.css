@@ -53,22 +53,21 @@ body{
     position: absolute;
     top: 1.5vh;
     z-index: 1;
-    border: black 1px solid;
-    
+    display: none; 
     height: 5px;
     width: 5px;
+    border: 2px black solid;
 }
 #map{
   left: 8vw;
 }
 #mis{
     left: 16vw;
-    border: black 2px solid;
 }
 #collect{
     left: 24vw;
 }
-#map img{
+.stuff  img{
     max-height: 100%;
     max-width: 100%;
 }
