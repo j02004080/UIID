@@ -56,7 +56,6 @@ body{
     display: none; 
     height: 5px;
     width: 5px;
-    border: 2px black solid;
 }
 #map{
   left: 8vw;
@@ -66,8 +65,12 @@ body{
 }
 #collect{
     left: 24vw;
+    border: black 2px solid;
 }
 .stuff  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-height: 100%;
     max-width: 100%;
 }
