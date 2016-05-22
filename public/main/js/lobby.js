@@ -164,6 +164,93 @@ $(document).ready(function() {
             button1 = true;
         }
     });
+
+    var calldone = false;
+
+    function go(id){
+      
+      if (id === "map"){
+         if (calldone === false){
+                  $("#map").show();
+                  calldone = true;
+                  $("#map").animate({
+                    top: "10vh",
+                    margin: "0 2%",
+                    width: "80vw",
+                    height: "90vh"
+                     
+                  }, ani_time);
+         
+                }else{
+                  $("#map").animate({
+                    top: "1.5vh",
+                    margin: "0 0",
+                    width: "5px",
+                    height: "5px"
+                  }, ani_time);
+                  calldone = false;
+                  setTimeout(function(){
+                    $("#map").hide();
+                  }, ani_time);
+                }
+
+      }else if(id==="mission"){
+        if (calldone === false){
+                           $("#mis").show();
+                           calldone = true;
+                           $("#mis").animate({
+                             top: "15vh",
+                             margin: "0 2%",
+                             width: "80vw",
+                             height: "75vh",
+                              left: "8vw" 
+                           }, ani_time);
+        
+                         }else{
+                           $("#mis").animate({
+                             top: "1.5vh",
+                             margin: "0 0",
+                             width: "5px",
+                             height: "5px",
+                             left: "16vw"
+                           }, ani_time);
+                           calldone = false;
+                           setTimeout(function(){
+                             $("#mis").hide();
+                           }, ani_time);
+                         }
+
+      }
+    
+      else if(id==="collect"){
+       if (calldone === false){
+                           $("#collect").show();
+                           calldone = true;
+                           $("#collect").animate({
+                             top: "20vh",
+                             margin: "0 0",
+                             width: "85vw",
+                             height: "50vh",
+                              left: "8vw" 
+                           }, ani_time);
+        
+                         }else{
+                           $("#collect").animate({
+                             top: "1.5vh",
+                             margin: "0 0",
+                             width: "5px",
+                             height: "5px",
+                             left: "24vw"
+                           }, ani_time);
+                           calldone = false;
+                           setTimeout(function(){
+                             $("#collect").hide();
+                           }, ani_time);
+                         }
+      
+
+      }
+    };
     
     $('.button2, .ON2, OFF2').click(function(){
         if(button2 == true){
