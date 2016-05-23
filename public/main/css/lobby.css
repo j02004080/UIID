@@ -236,6 +236,7 @@
         display: none; 
         height: 5px;
         width: 5px;
+        border: black 2px solid;
     }
     #map{
       left: 8vw;
@@ -497,14 +498,14 @@
         position: absolute;
         top: 1.5vh;
         z-index: 8;
-        display: none; 
+        display: none;   
         height: 5px;
         width: 5px;
     }
     #map{
       left: 8vw;
     }
-    #mis{
+    #mission{
         left: 16vw;
     }
     #collect{

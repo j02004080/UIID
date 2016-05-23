@@ -119,6 +119,8 @@
         }
 $(document).ready(function() {
     
+    var ani_time = 500;
+	  var active_id = "0";
     var button1 = true;
     var button2 = true;
     
@@ -177,91 +179,88 @@ $(document).ready(function() {
         }
     });
 
-    var calldone = false;
-
-    function go(id){
-      
-      if (id === "map"){
-         if (calldone === false){
-                  $("#map").show();
-                  calldone = true;
-                  $("#map").animate({
-                    top: "10vh",
-                    margin: "0 2%",
-                    width: "80vw",
-                    height: "90vh",
-                  }, ani_time);
-         
-                }else{
-                  $("#map").animate({
-                    top: "1.5vh",
-                    margin: "0 0",
-                    width: "5px",
-                    height: "5px"
-                  }, ani_time);
-                  calldone = false;
-                  setTimeout(function(){
-                    $("#map").hide();
-                  }, ani_time);
-                }
-
-      }else if(id==="mission"){
-        if (calldone === false){
-                           $("#mis").show();
-                           calldone = true;
-                           $("#mis").animate({
-                             top: "15vh",
-                             margin: "0 2%",
-                             width: "80vw",
-                             height: "75vh",
-                              left: "8vw" 
-                           }, ani_time);
-        
-                         }else{
-                           $("#mis").animate({
-                             top: "1.5vh",
-                             margin: "0 0",
-                             width: "5px",
-                             height: "5px",
-                             left: "16vw"
-                           }, ani_time);
-                           calldone = false;
-                           setTimeout(function(){
-                             $("#mis").hide();
-                           }, ani_time);
-                         }
-
-      }
     
-      else if(id==="collect"){
-       if (calldone === false){
-                           $("#collect").show();
-                           calldone = true;
-                           $("#collect").animate({
-                             top: "20vh",
-                             margin: "0 0",
-                             width: "85vw",
-                             height: "50vh",
-                              left: "8vw" 
-                           }, ani_time);
-        
-                         }else{
-                           $("#collect").animate({
-                             top: "1.5vh",
-                             margin: "0 0",
-                             width: "5px",
-                             height: "5px",
-                             left: "24vw"
-                           }, ani_time);
-                           calldone = false;
-                           setTimeout(function(){
-                             $("#collect").hide();
-                           }, ani_time);
-                         }
-      
-
+    $(".mapbut").click(function(){
+        if (active_id === "0"){
+			    go("map", 10, 80, 90);
+        }
+        else {
+          var a_test = active_id;
+          back(active_id);
+          if (a_test !== "map"){
+            setTimeout(function(){
+              go("map", 10, 80, 90);
+            }, ani_time)
+        }
+     }  
+      	
+      });
+    $(".misbut").click(function(){
+      if (active_id === "0"){
+			  go("mission", 15, 80, 75);
       }
-    };
+      else {
+        var a_test = active_id;
+        back(active_id);
+        if (a_test !== "mission"){
+          setTimeout(function(){
+            go("mission", 15, 80, 75);
+          }, ani_time)
+        }
+     } 
+    });
+    $(".collectbut").click(function(){
+      if (active_id === "0"){
+			  go("collect", 20, 85, 75);
+      }
+      else {
+        var a_test = active_id;
+        back(active_id);
+        if (a_test !== "collect"){
+          setTimeout(function(){
+            go("collect", 20, 85, 75);
+          }, ani_time)
+        }
+     } 
+    });
+    
+    function go(id, t, w, h){
+		  active_id = id;
+		  w = w + "vw";
+		  h = h + "vh";
+		  t = t + "vh";
+		  $("#"+id).show();
+      $("#"+id).animate({          
+			  top: t,
+			  margin: "0 2%",            
+			  width: w,            
+			  height: h,
+			  left: "8vw"
+      }, ani_time);                      
+		
+	}
+	
+	function back(id){
+		var left_d = "8vw";
+    if (id==="mission"){
+			left_d = "16vw";
+		}
+		else if (id === "collect"){
+			left_d = "24vw";
+		}
+		
+		$("#"+id).animate({
+          top: "1.5vh",
+          margin: "0 0",
+          width: "5px",
+          height: "5px",
+					left: left_d
+        }, ani_time);
+		active_id = "0";       
+    setTimeout(function(){          
+        $("#"+id).hide();       
+    }, ani_time);          
+	}
     
     
     /*     
