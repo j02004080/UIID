@@ -164,6 +164,18 @@ $(document).ready(function() {
             button1 = true;
         }
     });
+    $('.button2, .ON2, .OFF2').click(function(){
+        if(button2 == true){
+            $('.button2').animate({
+                right:'12.5%'},200);
+            button2 = false;
+        }
+        else if(button2 == false){
+            $('.button2').animate({
+                right:'28%'},200);
+            button2 = true;
+        }
+    });
 
     var calldone = false;
 
@@ -177,8 +189,7 @@ $(document).ready(function() {
                     top: "10vh",
                     margin: "0 2%",
                     width: "80vw",
-                    height: "90vh"
-                     
+                    height: "90vh",
                   }, ani_time);
          
                 }else{
@@ -252,24 +263,12 @@ $(document).ready(function() {
       }
     };
     
-    $('.button2, .ON2, OFF2').click(function(){
-        if(button2 == true){
-            $('.button2').animate({
-                right:'12.5%'},200);
-            button2 = false;
-        }
-        else if(button2 == false){
-            $('.button2').animate({
-                right:'28%'},200);
-            button2 = true;
-        }
-    });
     
-            
+    /*     
     $('.on').click(function(){
         setStr(0);
         StrCount();
     });
-    
+    */
     
 });
