@@ -144,41 +144,77 @@ $(document).ready(function() {
         
     }
    
-    $('.setMenu').click(function(){
+    $('.menubut').click(function(){
         $('.setMenu').animate({
             top:'0%'},200);
     });
     
-    $('.setMenu').mouseleave(function(){
-        $('.setMenu').animate({
-            top:'-77%'},200);
-    });
     
-    $('.button1, .ON1, .OFF1').click(function(){
-        if(button1 == true){
-            $('.button1').animate({
-                right:'12.5%'},200);
-            button1 = false;
-        }
-        else if(button1 == false){
-            $('.button1').animate({
-                right:'28%'},200);
-            button1 = true;
-        }
-    });
-    $('.button2, .ON2, .OFF2').click(function(){
-        if(button2 == true){
-            $('.button2').animate({
-                right:'12.5%'},200);
-            button2 = false;
-        }
-        else if(button2 == false){
-            $('.button2').animate({
-                right:'28%'},200);
-            button2 = true;
-        }
-    });
-
+    
+   
+    if(document.documentElement.clientWidth <=600){
+        $('.button1, .ON1, .OFF1').click(function(){
+            if(button1 == true){
+                $('.button1').animate({
+                    right:'26%'},200);
+                button1 = false;
+            }
+            else if(button1 == false){
+                $('.button1').animate({
+                    right:'39%'},200);
+                button1 = true;
+            }
+        });
+        $('.button2, .ON2, .OFF2').click(function(){
+            if(button2 == true){
+                $('.button2').animate({
+                    right:'26%'},200);
+                button2 = false;
+            }
+            else if(button2 == false){
+                $('.button2').animate({
+                    right:'39%'},200);
+                button2 = true;
+            }
+        });
+        
+        $('#jan, #fu, #zheng').click(function(){
+            $('.setMenu').animate({
+                top:'-100%'},200);
+        });
+    }
+    
+    if(document.documentElement.clientWidth >=601){
+        $('.button1, .ON1, .OFF1').click(function(){
+            if(button1 == true){
+                $('.button1').animate({
+                    right:'12%'},200);
+                button1 = false;
+            }
+            else if(button1 == false){
+                $('.button1').animate({
+                    right:'29%'},200);
+                button1 = true;
+            }
+        });
+       $('.button2, .ON2, .OFF2').click(function(){
+            if(button2 == true){
+                $('.button2').animate({
+                    right:'12%'},200);
+                button2 = false;
+            }
+            else if(button2 == false){
+                $('.button2').animate({
+                    right:'29%'},200);
+                button2 = true;
+            }
+        });
+        
+        $('.setMenu').mouseleave(function(){
+            $('.setMenu').animate({
+                top:'-100%'},200);
+        });
+    }
     
     $(".mapbut").click(function(){
         if (active_id === "0"){
