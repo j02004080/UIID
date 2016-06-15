@@ -3,7 +3,7 @@
 }
 body{
 	
-	background: url("Pic/first_page_background.png") no-repeat center center fixed;
+	background: url("Pic/front_background.png") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -19,19 +19,23 @@ body{
 #titlediv{
 	height: 20vh;
 }
-#buttondiv{
-  height: 10vh;
+#button{
+  position: absolute;
+  width: 100%;
+  height: auto;
 }
+
 #title{
   
   margin-top: 30%;
   width: 100%;  	
 	height: auto;
 }
-#button {
-	margin: 0  35%;
+.button {
+  position: absolute;
+	margin: 0  auto;
   margin-top: 15%;
-	width: 30%;
+	width: 100%;
 	height: auto;	  
 }
 #animationdiv{
@@ -45,7 +49,33 @@ body{
 	width: 100%;
 	height: auto;
 }
+#sheet{
+  position: absolute;
+  top: 35%;
+  height: auto;
+  width: 100%;
+  display: none;
 
+}
+#sheet form{
+  margin: 0 30%;
+}
+#test{
+  position: absolute;
+  width: 20%;
+  height: 3%;
+  top: 38%;
+  margin: 0 40%;
+  z-index: 1;
+}
+#test1{
+  position: absolute;
+  width: 40%;
+  height: 3%;
+  top: 33%;
+  margin: 0 30%;
+  z-index: 1;
+}
 #man{
   position: absolute;
 	bottom: 5vh;

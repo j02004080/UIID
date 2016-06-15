@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!<link href="index.css" rel="stylesheet"/>->
-    <link href="index-mobile.css" rel="stylesheet" media="screen only (max-width: 760px)"/> 
+		<link href="index-mobile.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-    <link rel="prefetch prerender" href="https://www.facebook.com"/> 
-		<script src="jquery-2.2.1.min.js"></script>
+    <link rel="prefetch prerender" href="http://luffy.ee.ncku.edu.tw:8107/main"/> 
+
+    <script src="jquery-2.2.1.min.js"></script>
 		<script type="text/javascript" src="index.js"></script>
+    
 		<meta charset="UTF-8">
 	</head>
 	<body>
 	<div id="content">
-		
-			<div id="titlediv">
-				<img id="title" src="Pic/first_page_TITLE.png"/>
+      <div id="test">
+      </div>
+      <a id = "link" href = "http://luffy.ee.ncku.edu.tw:8107/main">
+        <div id="test1"></div>
+      </a>
+			<div class="buttondiv">
+				<img id="new" class="button" src="Pic/new.png"/>
+      </div>
+      <div class="buttondiv">
+				  <img id="continue"class="button" src="Pic/continue.png"/>
 			</div>
-		
-			<div id="buttondiv">
-    <!--   <a id="link"  href="https://www.facebook.com"> -->
+      <div id="sheet">
+        <form action="/ask" method="post" id="name">
+          Name: <input type="text" name="ID"></textarea><br> 
           <a id = "link" href = "http://luffy.ee.ncku.edu.tw:8107/main">
-				  <img id="button" src="Pic/first_page_START.png"/>
-        </a>
-			</div>
-
+            <input type="submit" value="Go!">
+          </a>
+        </form>
+      </div>
+    <!--
 		  <div id="animationdiv"> 
         <img id="man" src="Pic/first_page_human.png"/>
 	      <img id="house" src="Pic/first_page_HOUSE3.png"/> 	    
       </div>		
-		
+		-->
 	</div>
 	</body>
 	
