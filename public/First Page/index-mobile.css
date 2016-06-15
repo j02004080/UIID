@@ -34,7 +34,7 @@ body{
 .button {
   position: absolute;
 	margin: 0  auto;
-  margin-top: 15%;
+  margin-top: 30%;
 	width: 100%;
 	height: auto;	  
 }
@@ -55,24 +55,23 @@ body{
   height: auto;
   width: 100%;
   display: none;
-
-}
-#sheet form{
-  margin: 0 30%;
+}  
+#sheet form{ 
+ margin: 0 40%;
 }
 #test{
   position: absolute;
   width: 20%;
-  height: 3%;
-  top: 38%;
+  height: 4%;
+  top: 40%;
   margin: 0 40%;
   z-index: 1;
 }
 #test1{
   position: absolute;
   width: 40%;
-  height: 3%;
-  top: 33%;
+  height: 4%;
+  top: 35%;
   margin: 0 30%;
   z-index: 1;
 }

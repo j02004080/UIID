@@ -1,8 +1,12 @@
+
+
+
+
 $(document).ready(function(){
 	$("#test").click(function(e){
     e.preventDefault();
-    $(".buttondiv").fadeOut(2000);
+    $(".buttondiv").fadeOut(500);
     $("#test1").fadeOut();
-    $("#sheet").fadeIn(2000);
+    $("#sheet").fadeIn(500);
   });
 });
