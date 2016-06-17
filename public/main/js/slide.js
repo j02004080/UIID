@@ -9,7 +9,7 @@ $(document).ready(function() {
     $('#jan-r').addClass("showr");
     $('#jan-boss').addClass("showboss");
     $('.showb, .showo, .showr, .showboss').show();
-    $('.showb, .showo, .showr, .showboss').css({"left":"0%"});
+    $('.showb, .showo, .showr').css({"left":"0%"});
     $('.showb').css({"z-index":"1"});
     $('.showo').css({"z-index":"2"});
     $('.showr').css({"z-index":"3"});

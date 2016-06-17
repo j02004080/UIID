@@ -3,7 +3,7 @@ $(document).ready(function(){
 	use="1";
 	$.ajax({
 	    method: "POST",
-	    url: "dialog.php",
+	    url: "/dialog",
 	    dataType: 'text',
 	    data: {call: DialogID,actions: "fetchdialog"}
 	    }).done(function(data){
@@ -22,7 +22,7 @@ function next(){
 		index=1;
 		$.ajax({
 			method: "POST",
-			url: "dialog.php",
+			url: "/dialog",
 			dataType: 'text',
 			data: {call: DialogID,actions: "fetchdialog"}
 		}).done(function(data){

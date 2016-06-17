@@ -1,7 +1,10 @@
 <?php
 mb_internal_encoding('utf-8');
-$call = $_POST["call"];
-$actions = $_POST["actions"];
+//var_dump($argv);
+$call = $argv[1];
+$actions = $argv[2];
+//$call = $_POST["call"];
+//$actions = $_POST["actions"];
 
 if($actions == "fetchdialog")fetchdialog($call);
 
@@ -16,6 +19,7 @@ function fetchdialog($dialogID)//讀取對話
 		return 0;
 	}
 	$Dtxt = mb_convert_encoding(@fread($fp_dia, filesize($filename)), "UTF-8");
-	echo $Dtxt;
+	print $Dtxt;
+  
 }
 ?>
