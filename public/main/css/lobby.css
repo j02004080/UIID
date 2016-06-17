@@ -342,7 +342,15 @@
         max-width: 100%;
     }
     
-   
+    #preload{
+        background-image: url('../Scenes/Fu-background.png');
+        background-image: url('../Scenes/Jan-background.png');
+        background-image: url('../Scenes/Zheng-background.png');
+        width: 0px;
+        height:0px;
+        display: inline;
+    
+    }
     
     body{
         background-image: url("../img/background.png");

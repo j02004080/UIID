@@ -117,10 +117,21 @@
         function setStr(num){
             str = num;
         }
+
+        $(window).load(function(){
+            $('.flexslider').flexslider({
+                animation: "slide",
+                slideshow: false,
+                smoothHeight: false,
+                controlNav: false,
+                directionNav: false
+            }); 
+        });
+
 $(document).ready(function() {
     
     var ani_time = 500;
-	  var active_id = "0";
+    var active_id = "0";
     var button1 = true;
     var button2 = true;
     
@@ -131,13 +142,7 @@ $(document).ready(function() {
     }   
     
    
-    $('.flexslider').flexslider({
-    animation: "slide",
-    slideshow: false,
-    smoothHeight: false,
-    controlNav: false,
-    directionNav: false
-    });            
+               
     if(str < 3){
         showStr(str);
         StrCount();
