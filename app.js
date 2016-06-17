@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var credentials = require('./credential.js');
 var app = express();
 var fs = require('fs');
-app.listen(8103, function(){
+app.listen(8104, function(){
   console.log('server run');
 });
 
@@ -15,6 +15,10 @@ app.use(cookieParser(credentials.cookieSecret));
 
 app.get('/', function(req, res){
   res.redirect('/First Page');
+});
+
+app.get('/lobby', function(req, res){
+  res.sendFile(__dirname+ '/public/lobby/lobby.html');
 });
 
 app.get('/test', function(req, res){
@@ -40,6 +44,7 @@ app.get('/First Page',function(req,res){
 app.get('/main', function(req, res){
   res.sendFile(__dirname+'/public/main/main.html');
 });
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended:true
@@ -55,12 +60,8 @@ app.post('/ask', function(req,res){
     if(config[i].name == id){
         data = config[i];
         console.log(data.name);
-      }
-  }
-
-  config.push(data);
-  var configJSON = JSON.stringify(config);
-  fs.writeFileSync('name.json', configJSON);
+      } 
+    }
   res.redirect("/main");
 });
 

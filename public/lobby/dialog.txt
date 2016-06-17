@@ -1,0 +1,55 @@
+﻿{
+ "00_01_01":{"Content":"鋪剎~趴剎(潑水聲)","Bg":"BG\/EEdoor.jpg","Character":"character\/yuzuko\/normal_01.png","CharacterName":"m","BGM":"BGM\/Spring Flowers.mp3","Sound":"sound\/yukari_ohayou.mp3","Effect":"","Next":{"Next1":{"ID":"00_01_02","Txt":"N"}}}
+,"00_01_02":{"Content":"好冷啊…怎麼濕濕的","Bg":"BG\/3.jpg","Character":"character\/yuzuko\/normal_01.png","CharacterName":"m","BGM":"BGM\/Spring Flowers.mp3","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_03","Txt":"N"}}}
+,"00_01_03":{"Content":"少年仔，你總算醒來瞜，你在這邊躺很久了捏","Bg":"BG\/3.jpg","Character":"character\/yuzuko\/sad_01.png","CharacterName":"n","BGM":"BGM\/Yokan.mp3","Sound":"NONE","Effect":"screenshake","Next":{"Next1":{"ID":"00_01_04","Txt":"N"}}}
+,"00_01_04":{"Content":"你是誰啊？我怎麼在這？這又是哪裡…？","Bg":"BG\/9.jpg","Character":"character\/yui\/angry_01.png","CharacterName":"m","BGM":"BGM\/TekiPaki (Yui's Theme).mp3","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_05","Txt":"N"}}}
+,"00_01_05":{"Content":"我怎麼知道你為什麼在這裡！？我早上一來就發現你躺在我店門口，我還以為你昨天喝醉了勒。","Bg":"BG\/9.jpg","Character":"character\/yuzuko\/normal_01.png","CharacterName":"n","BGM":"BGM\/TekiPaki (Yui's Theme).mp3","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_06","Txt":"N"}}}
+,"00_01_06":{"Content":"痾……我自己也不清楚，我只記得我突然昏倒了就……這是你的店門口？江水號？大哥，你賣冰的痾","Bg":"BG\/9.jpg","Character":"character\/yuzuko\/normal_01.png","CharacterName":"m","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_07","Txt":"N"}}}
+,"00_01_07":{"Content":"喔喔對啊，這間店可是我親手打造的呢，對了，你要不要來我店裡面坐坐，順便讓你回想一下發生了甚麼事？","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_08","Txt":"當然好啊，大哥，你家的剉冰怎麼樣"},"Next2":{"ID":"00_01_09","Txt":"大哥，這怎麼好意思呢！"},"Next3":{"ID":"00_01_09","Txt":"N"}}}
+,"00_01_08":{"Content":"哈哈哈哈，進來不就知道了","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_10","Txt":"N"}}}
+,"00_01_09":{"Content":"客氣甚麼，來來來，我請你吃碗冰","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_10","Txt":"N"}}}
+,"00_01_10":{"Content":"“進入江水號內”","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_11","Txt":"N"}}}
+,"00_01_11":{"Content":"大哥，你家的剉冰真的讚啦","Bg":"BG\/9.jpg","Character":"","CharacterName":"m","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_12","Txt":"N"}}}
+,"00_01_12":{"Content":"當然啊，這可是本店的招牌呢","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_13","Txt":"N"}}}
+,"00_01_13":{"Content":"哈哈哈哈，說到這個，還不知道大哥您叫甚麼名字呢","Bg":"BG\/9.jpg","Character":"","CharacterName":"m","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_14","Txt":"N"}}}
+,"00_01_14":{"Content":"我叫做黃江水啦，就是江水號的江水啦，是說你有沒有響起來發生了甚麼事，你怎麼會一個人躺在我店門口痾","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_15","Txt":"沒有……我到現在還是一頭霧水……"},"Next2":{"ID":"00_01_15","Txt":"好像有那麼一點印象了，可是還是很模糊……"}}}
+,"00_01_15":{"Content":"喔喔喔喔是沒有關係啦，你再慢慢想想","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_16","Txt":"N"}}}
+,"00_01_16":{"Content":"欸對了黃大哥，今天是幾號了啊，我昏了多久呢？","Bg":"BG\/9.jpg","Character":"","CharacterName":"m","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_17","Txt":"N"}}}
+,"00_01_17":{"Content":"今天是昭和十一年(1936)的6.29啦，我昨天走的時候你還沒倒在這邊啦，所以應該就一個晚上吧","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_18","Txt":"黃大哥你沒有再跟我開玩笑吧……"},"Next2":{"ID":"00_01_19","Txt":"(沉默不語)"}}}
+,"00_01_18":{"Content":"我作弄你幹嘛，怎麼了","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_20","Txt":"N"}}}
+,"00_01_19":{"Content":"怎麼了，怎麼突然臉色一沉？","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_20","Txt":"N"}}}
+,"00_01_20":{"Content":"...","Bg":"BG\/9.jpg","Character":"","CharacterName":"m","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_21","Txt":"昭和是那個，日本天皇嗎"},"Next2":{"ID":"00_01_22","Txt":"昭和十一年是，西元多少年？？"}}}
+,"00_01_21":{"Content":"對阿，便是當今的天皇啊~你怎麼忘了，是頭還不舒服嗎？？","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_23","Txt":"N"}}}
+,"00_01_22":{"Content":"我想一下喔……1936年啊，怎麼了","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_23","Txt":"N"}}}
+,"00_01_23":{"Content":"(不可能吧……昨天不是還是2016.4.29嗎，難道我穿越了?.....)","Bg":"BG\/9.jpg","Character":"","CharacterName":"m","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_24","Txt":"N"}}}
+,"00_01_24":{"Content":"喔喔沒事沒事，可能是因為剛醒來頭還有點暈暈的吧，黃大哥謝謝你啦，小弟我先去外面走走吹吹風看會不會好一點","Bg":"BG\/9.jpg","Character":"","CharacterName":"m","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_25","Txt":"N"}}}
+,"00_01_25":{"Content":"好喔……看你臉色有點差，等你舒服點再回來找我吧","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_26","Txt":"N"}}}
+,"00_01_26":{"Content":"好的，黃大哥那我先走啦","Bg":"BG\/9.jpg","Character":"","CharacterName":"m","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_27","Txt":"N"}}}
+,"00_01_27":{"Content":"“離開江水號，到西市場口”","Bg":"BG\/9.jpg","Character":"","CharacterName":"n","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_28","Txt":"N"}}}
+,"00_01_28":{"Content":"天啊……這邊怎麼看起來跟印象中的樣子都不太一樣，難不成現在真的是昭和十一年，我真的穿越了嗎……太扯了吧……這不是古裝劇才會有的情節嗎……現在我該怎麼做呢……還是先來把事情弄清楚吧","Bg":"BG\/9.jpg","Character":"","CharacterName":"m","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_02_01","Txt":"(回去江水號找黃大哥再把事情問清楚吧)"},"Next2":{"ID":"00_03_01","Txt":"去別的地方晃晃看看會有甚麼吧"}}}
+
+
+,"00_02_01":{"Content":"(走回江水號的路上)","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_02_02","Txt":"N"}}}
+,"00_02_02":{"Content":"夭壽哩，那哀大家都穿的好像從古裝劇裡面走出來…….難道現在真的是昭和八年嗎，看來得好好跟黃大哥想想怎麼說了。","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_02_03","Txt":"N"}}}
+,"00_02_03":{"Content":"(走路中)","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_02_04","Txt":"N"}}}
+,"00_02_04":{"Content":"疑？我剛踹到甚麼東西？","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_02_05","Txt":"N"}}}
+,"00_02_05":{"Content":"拾得“地圖”","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_02_06","Txt":"N"}}}
+,"00_02_06":{"Content":"痾這是地圖嗎？可是怎麼除了江水號之外，其他都整片黑摸摸的啥都看不到……算了先收好吧","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_04_01","Txt":"N"}}}
+
+
+,"00_03_01":{"Content":"天啊，這邊的人穿的怎麼跟我都好像不太一樣，真的很像是從古裝劇裡面走出來的樣子耶……每個人我也都不認識……","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_03_02","Txt":"問路人看看好了"},"Next2":{"ID":"00_03_11","Txt":"回去江水號找黃大哥好了"}}}
+,"00_03_02":{"Content":"嗨你好，請問你知道這邊是哪裡嗎？","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_31","Txt":"N"}}}
+,"00_03_03":{"Content":"&@#&*@&#&*~!#^*$^%@","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_31","Txt":"N"}}}
+,"00_03_04":{"Content":"痾好喔不好意思，謝謝你……(離開)","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_31","Txt":"N"}}}
+,"00_03_05":{"Content":"他剛剛說的是，日文嗎……該不會現在真的是日治時期吧……","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_31","Txt":"N"}}}
+,"00_03_06":{"Content":"他剛剛好像掉了一個東西噎","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_31","Txt":"N"}}}
+,"00_03_07":{"Content":"拾得”地圖”","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_31","Txt":"N"}}}
+,"00_03_08":{"Content":"痾這是地圖嗎？可是怎麼除了江水號之外，其他都整片黑摸摸的啥都看不到……","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_31","Txt":"N"}}}
+,"00_03_09":{"Content":"算了先收好吧，還是先回去找黃大哥問清楚吧","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_31","Txt":"N"}}}
+,"00_03_10":{"Content":"“返回江水號”","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_31","Txt":"N"}}}
+,"00_03_11":{"Content":"(返回江水號的路上)","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_31","Txt":"N"}}}
+,"00_03_12":{"Content":"疑？我剛踹到甚麼東西？","Bg":"BG\/9.jpg","Character":"","CharacterName":"","BGM":"","Sound":"NONE","Effect":"","Next":{"Next1":{"ID":"00_01_31","Txt":"N"}}}
+
+
+
+}

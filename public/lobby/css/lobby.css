@@ -1,0 +1,744 @@
+
+@media screen and (max-width: 600px){
+    
+    img {
+        max-width: 100%;
+    }
+    .flex-viewport{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    }
+
+    .flexslider .slides,
+    .flexslider .slides > li
+    {
+        height: 100%;
+    }
+
+    .flexslider .slides > li{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    
+    body{
+        background-image: url("../img/background.png");
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    #clock{
+        display: none;
+    }
+    
+    .mapbut{
+        position:absolute;
+        left:0%;
+        
+        width: 10% ;
+        border-radius: 50%;
+        margin-left: 5%;
+        z-index: 8;
+    }
+
+    .misbut{
+        position:absolute;
+        left:14%;
+        
+        width: 10% ;
+        border-radius: 50%;
+        z-index: 8;
+    }
+
+    .collectbut{
+        position: absolute;
+        left:23%;
+        
+        width: 10% ;
+        border-radius: 50%;
+        z-index: 8;
+    }
+
+
+    .str3{
+        position:absolute;
+        top:1%;
+        right:5%;
+        height:5% ;
+        width: 10%;
+        z-index: 8;
+    }
+
+    .str2{
+        position:absolute;
+        top:1%;
+        right:15%;
+        height:5% ;
+        width: 10%;
+        z-index: 8;
+    }
+
+    .str1{
+        position:absolute;
+        top:1%;
+        right:25%;
+        height:5% ;
+        width: 10%;
+        z-index: 8;
+    }
+    /*----------------setMenu--------------------------*/
+    .menubut{
+        position:absolute;
+        top:-8%;
+        left:40%;
+        width:20%;
+        z-index: 5;
+        cursor: pointer;
+    }
+    
+    
+    .setMenu{
+        position: absolute;
+        background-image: url("../img/menu.png");
+        background-repeat: no-repeat;
+        background-size: contain; 
+        left:15%;
+        bottom:100%;
+        width: 70%;
+        height: 70%;
+        z-index: 9;
+        cursor: pointer;
+    
+    }
+    #s1{
+        position:absolute;
+        left:5%;
+        top:15%;
+        font-size: 200%;
+        font-weight: 1200;
+        font-family: Microsoft JhengHei;
+    }
+    
+    #s2{
+        position:absolute;
+        left:5%;
+        top:27%;
+        font-size: 200%;
+        font-family: Microsoft JhengHei;
+    }
+    
+    #s3{
+        position: absolute;
+        left:26%;
+        bottom:42%;
+        font-size: 220%;
+        font-family: Microsoft JhengHei;
+    }
+    
+    #s4{
+        position: absolute;
+        left:26%;
+        bottom: 24%;
+        font-size: 220%;
+        font-family: Microsoft JhengHei;
+    }
+    
+    .ON1{
+        position:absolute;
+        right:33%;
+        top:17.5%;
+        width: 10%;
+        z-index: 4;
+    }
+    
+    .OFF1{
+        position:absolute;
+        right:15%;
+        top:17.5%;
+        width: 12%;
+        z-index: 4;
+    }
+    
+    .ON2{
+        position:absolute;
+        right:33%;
+        top:28.5%;
+        width: 10%;
+        z-index: 4;
+    }
+    
+    .OFF2{
+        position:absolute;
+        right:15%;
+        top:28.5%;
+        width: 12%;
+        z-index: 4;
+    }
+    
+    .button1{
+        position:absolute;
+        width:15%;
+        right:30%;
+        top:16%;
+        z-index: 3;
+    }
+    
+    .button2{
+        position:absolute;
+        width:15%;
+        right:30%;
+        top:27%;
+        z-index: 3;
+    }
+    
+    .button3{
+        position:absolute;
+        width: 52%;
+        left:24%;
+        bottom: 25%;
+        
+    }
+    
+    .button4{
+        position:absolute;
+        width: 52%;
+        left:24%;
+        bottom: 43%;
+        
+    }
+    
+    .flexslider{
+        position: absolute;
+        top:0%;
+        left:0%;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+     #player{
+        position: absolute;
+        height: 20%;
+        width: 20%;
+        bottom:10%;
+        left:0%;
+        width: auto;
+        z-index: 4;
+    }
+    
+/*Jan*/
+    #jan{
+        position:relative;
+        left:0%;
+        top:0%;
+        width: 100%;
+        height: 100%;
+        background-image: url("../Scenes/Jan-background.png");
+        background-size: contain;
+        
+    }
+    
+    
+    #jan-o{       
+        position:relative;
+        top:7%;
+        width:auto; 
+        z-index: 3;
+    }
+    
+    #jan-r{
+        position: absolute;
+        top:40%;
+        left:0%;
+        width: 100%;
+        z-index: 4;
+    }
+    
+    #jan-boss{
+        
+        position: absolute;
+        top:35%;
+        left:12%;
+        width: 10%;
+        height: 10%;
+        background-color: transparent;
+        border: none;
+        font-size:0;
+        cursor:pointer;
+        z-index: 6;   
+    }
+    /*Fu*/
+    #fu{
+        position:relative;
+        left:0%;
+        width: 100%;
+        height: 100%;
+        background-image: url("../Scenes/Fu-background.png");
+        background-size: contain;
+    }
+    
+    
+    #fu-o{       
+        position:relative;
+        top:13%;
+        width:auto; 
+        z-index: 3;
+    }
+    
+    #fu-r{
+        position: absolute;
+        top:40%;
+        left:0%;
+        width: auto;
+        z-index: 4;
+    }
+    
+	#fu-boss{
+        
+        position: absolute;
+        top:15%;
+        left:53%;
+        width: 10%;
+        height: 10%;
+        background-color: transparent;
+        border: none;
+        font-size:0;
+        cursor:pointer;
+        z-index: 6;   
+    }
+	
+    #zheng{
+        position:relative;
+        left:0%;
+        top:0%;
+        width: 100%;
+        height: 100%;
+        background-image: url("../Scenes/Zheng-background.png");
+        background-size: contain;
+    }
+    
+    
+    #zheng-o{       
+        position:relative;
+        top:-12%;
+        width:auto; 
+        z-index: 3;
+    }
+    
+    #zheng-r{
+        position: absolute;
+        top:40%;
+        left:0%;
+        width: 100%;
+        z-index: 4;
+    }
+	
+	#zheng-boss{
+        
+        position: absolute;
+        top:33%;
+        left:33%;
+        width: 10%;
+        height: 10%;
+        background-color: transparent;
+        border: none;
+        font-size:0;
+        cursor:pointer;
+        z-index: 6;   
+    }
+	
+    .stuff{
+        position: absolute;
+        top: 1.5vh;
+        z-index: 10;
+        display: none; 
+        height: 5px;
+        width: 5px;
+       // border: black 2px solid;
+    }
+    #map{
+      left: 8vw;
+    }
+    #mis{
+        left: 16vw;
+    }
+    #collect{
+        left: 24vw;
+        //border: black 2px solid;
+    }
+    .stuff img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .mask{
+        background-image: url('../img/mask.png');
+        position:absolute;
+        top:0%;
+        left:0%;
+        height: 100%;
+        width: 100%;
+        z-index: 6;
+        display: none;
+    }
+}
+
+/*------------------------------------big screen ---------------------*/
+
+@media screen and (min-width: 601px){
+
+    img {
+        max-width: 100%;
+    }
+    
+    #preload{
+        background-image: url('../Scenes/Fu-background.png');
+        background-image: url('../Scenes/Jan-background.png');
+        background-image: url('../Scenes/Zheng-background.png');
+        width: 0px;
+        height:0px;
+        display: inline;
+    
+    }
+    
+    body{
+        background-image: url("../img/background.png");
+        background-size: cover;
+    }
+    
+    #clock{
+        position:absolute;
+        right:20%;
+        top:12%
+    }
+    .mapbut{
+        height: 7% ;
+        width: 7% ;
+        border-radius: 50%;
+        margin-left: 5%;
+    }
+
+    .misbut{
+        height: 7% ;
+        width: 7% ;
+        border-radius: 50%;
+    }
+
+    .collectbut{
+        height: 7% ;
+        width: 7% ;
+        border-radius: 50%;
+    }
+
+
+
+    .str3{
+        position:absolute;
+        top:5%;
+        right:5%;
+        height:5% ;
+        width: 10%;
+    }
+
+    .str2{
+        position:absolute;
+        top:5%;
+        right:15%;
+        height:5% ;
+        width: 10%;
+    }
+
+    .str1{
+        position:absolute;
+        top:5%;
+        right:25%;
+        height:5% ;
+        width: 10%;
+    }
+    
+    /*-----------------setMenu------------------*/
+    
+    .menubut{
+        position:absolute;
+        top:-10%;
+        left:45%;
+        width:8%;
+        z-index: 5;
+        cursor: pointer;
+    }
+    
+    .setMenu{
+        position: absolute;
+        background-image: url("../img/menu.png");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        left:35%;
+        bottom :100%;
+        width: 27%;
+        height: 83%;
+        z-index: 6;
+        cursor: pointer;
+    
+    }
+    #s1{
+        position:absolute;
+        left:8%;
+        top:15%;
+        font-size: 250%;
+        font-weight: 1200;
+    }
+    
+    #s2{
+        position:absolute;
+        left:8%;
+        top:27%;
+        font-size: 250%;
+    }
+    
+    #s3{
+        position: absolute;
+        left:28%;
+        bottom:42%;
+        font-size: 250%;
+    }
+    
+    #s4{
+        position: absolute;
+        left:28%;
+        bottom: 24%;
+        font-size: 250%;
+    }
+    
+    .ON1{
+        position:absolute;
+        right:32%;
+        top:18.5%;
+        width: 10%;
+        z-index: 4;
+    }
+    
+    .OFF1{
+        position:absolute;
+        right:14%;
+        top:18.5%;
+        width: 13%;
+        z-index: 4;
+    }
+    
+    .ON2{
+        position:absolute;
+        right:32%;
+        top:30%;
+        width: 10%;
+        z-index: 4;
+    }
+    
+    .OFF2{
+        position:absolute;
+        right:14%;
+        top:30%;
+        width: 13%;
+        z-index: 4;
+    }
+    
+    .button1{
+        position:absolute;
+        width:16.5%;
+        right:28%;
+        top:16.5%;
+        z-index: 3;
+    }
+    
+    .button2{
+        position:absolute;
+        width:16.5%;
+        right:28%;
+        top:28%;
+        z-index: 3;
+    }
+    
+    .button3{
+        position:absolute;
+        width: 50%;
+        left:25%;
+        bottom: 25%;
+        
+    }
+    
+    .button4{
+        position:absolute;
+        width: 50%;
+        left:25%;
+        bottom: 43%;
+        
+    }
+    .flexslider{
+        left:20%;
+        width: 25%;
+        height: 50%;
+    }
+    
+   
+        
+   
+    
+    #player{
+        position: absolute;
+        height: 20%;
+        width: 20%;
+        bottom:23%;
+        left:20%;
+        width: auto;
+        z-index: 4;
+    }
+    
+/*Jan*/
+    #jan{
+        position:relative;
+        left:0%;
+        width: 100%;
+        height: 100%;
+        background-image: url("../Scenes/Jan-background.png");
+        background-size: contain;
+    }
+    
+    
+    #jan-o{       
+        position:relative;
+        width:auto; 
+        z-index: 3;
+    }
+    
+    #jan-r{
+        position: absolute;
+        top:35%;
+        left:0%;
+        width: auto;
+        z-index: 4;
+    }
+    
+    #jan-boss{
+        
+        position: absolute;
+        top:30%;
+        left:12%;
+        width: 10%;
+        height: 10%;
+        background-color: transparent;
+        border: none;
+        font-size:0;
+        cursor:pointer;
+        z-index: 6;   
+    }
+
+/*Fu*/
+    #fu{
+        position:relative;
+        left:0%;
+        width: 100%;
+        height: 100%;
+        background-image: url("../Scenes/Fu-background.png");
+        background-size: contain;
+    }
+    
+    
+    #fu-o{       
+        position:relative;
+        width:auto; 
+        z-index: 3;
+    }
+    
+    #fu-r{
+        position: absolute;
+        top:30%;
+        left:0%;
+        width: auto;
+        z-index: 4;
+    }
+    
+	#fu-boss{
+        
+        position: absolute;
+        top:15%;
+        left:53%;
+        width: 10%;
+        height: 10%;
+        background-color: transparent;
+        border: none;
+        font-size:0;
+        cursor:pointer;
+        z-index: 6;   
+    }
+	
+    #zheng{
+        position:relative;
+        left:0%;
+        width: 100%;
+        height: 100%;
+        background-image: url("../Scenes/Zheng-background.png");
+        background-size: contain;
+        
+    }
+    
+    
+    #zheng-o{
+        position: relative;
+        top:-15%;
+        width:80%;
+        z-index: 3;
+    }
+    
+    #zheng-r{
+        position: absolute;
+        top:40%;
+        left:0%;
+        width:80%;
+        z-index: 4;
+    }
+    
+	#zheng-boss{
+        
+        position: absolute;
+        top:33%;
+        left:33%;
+        width: 10%;
+        height: 10%;
+        background-color: transparent;
+        border: none;
+        font-size:0;
+        cursor:pointer;
+        z-index: 6;   
+    }
+	
+    .stuff{
+        position: absolute;
+        top: 1.5vh;
+        z-index: 8;
+        display: none;   
+        height: 5px;
+        width: 5px;
+    }
+    #map{
+      left: 8vw;
+    }
+    #mission{
+        left: 16vw;
+    }
+    #collect{
+        left: 24vw;
+        border: black 2px solid;
+    }
+    
+    .stuff img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+}
