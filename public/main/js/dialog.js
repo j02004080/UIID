@@ -2,7 +2,7 @@ $(document).ready(function(){
     $.post('/getdata', {action:'dialog'}, function(data){
         DialogID = data.DialogID;
     }).done(function(){
-        if(DialogID == '00_01_01'){
+        /*if(DialogID == '00_01_01'){
             var vid = document.getElementById('water');
             vid.play();
             vid.onended = function(){
@@ -12,7 +12,7 @@ $(document).ready(function(){
         }
         else{
             $('#water').hide();
-        }
+        }*/
     });
     
 	if(use=="0"){
@@ -33,6 +33,7 @@ $(document).ready(function(){
 });
 
 function next(){
+
 	if((JSON.parse(DialogSet)[DialogID].Next["Next1"].Txt=="N"&&option==0)||optChoice=="done"){
 		DialogID = JSON.parse(DialogSet)[DialogID].Next["Next"+index.toString()].ID;
 		optChoice="no";
@@ -85,6 +86,10 @@ function o(){
 			option=0;
 			optChoice="done";
 		}
+
+        $.post('/leave', {action:"dialog", dialogID:DialogID}, function()           {
+            console.log('bye');
+        });
 	}
 }
 function NewsetGame()

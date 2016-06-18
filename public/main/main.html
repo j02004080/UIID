@@ -24,9 +24,18 @@
 		var optChoice="no";
 		var diaNumber=1;
 		var mapName="jan"
-		</script>
-    </head>
-    
+    window.addEventListener("load",function() {  
+       setTimeout(function(){
+       window.scrollTo(0, 1); }, 10);
+    });
+    var jinzhi=0;
+    document.addEventListener("touchmove", function(e){
+      if(jinzhi==0){
+        e.preventDefault();
+        e.stopPropagation();
+        }
+      },false);
+    </script>
     <body>
         <div id="hideAll"></div>
         <input type="image" src="img/map_but.png" class="mapbut">
@@ -226,9 +235,9 @@
         
         <div id="all" onclick="next()"></div>
         
-        <video id = "water" preload="auto">
+        <!--<video id = "water" preload="auto">
             <source src="img/water%20splash.mp4" type="video/mp4">
-        </video>
+        </video>-->
         <video id = "End" preload="auto">
             <source src="img/End.mp4" type="video/mp4">
         </video>
@@ -239,6 +248,7 @@
             $(window).on('beforeunload', function (e) {
         $.post('/leave', {action:"dialog", dialogID:DialogID}, function()           {
             console.log('bye');
+
         });
     });
         </script>

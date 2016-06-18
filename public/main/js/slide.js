@@ -134,6 +134,10 @@ $(document).ready(function() {
                                     else if(i==8){
                                         $('#1995').fadeIn(200);
                                     }
+
+        $.post('/leave', {action:"map", map:i+1}, function(){
+            console.log('bye');
+        });
         
     });
     $('#1936, #1956, #1995').click(function(){
