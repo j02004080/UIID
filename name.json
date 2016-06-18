@@ -432,5 +432,19 @@
 		"str": 0,
 		"map": 0,
 		"mis": " "
+	},
+	{
+		"name": "wFVevBN0gUonQdWYDV1kreleU2nn1DpI",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": " "
+	},
+	{
+		"name": "9jKIB5zLhXZmimZChH3BRBQPD4mgiIF8",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "1",
+		"mis": " "
 	}
 ]
