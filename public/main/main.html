@@ -26,7 +26,7 @@
     </head>
     
     <body>
-        
+        <div id="hideAll"></div>
         <input type="image" src="img/map_but.png" class="mapbut">
         <input type="image" src="img/mission_but.png" class="misbut">
         <input type="image" src="img/collect_but.png" class="collectbut">
@@ -37,7 +37,9 @@
                 <img class="str2" src="img/str.png">
                 <img class="str3" src="img/str.png">
         </div>
-                
+        
+        
+        
         <div class="setMenu">
             <p id="s1">遊戲音樂</p>
             <p id="s2">遊戲音效</p>
@@ -49,11 +51,18 @@
             <img class="button2" src="img/menu/ONOFFbut.png">
             <img class="button3" src="img/menu/bigbut.png">
             <img class="button4" src="img/menu/bigbut.png">
-            <p id="s3">回到標題</p>
+            <a hred="/"><p id="s3">回到標題</p></a>
             <p id="s4">團隊介紹</p>
         </div>
         
+        <div id="cover">
+            <img id = "1936" src="img/cover/cover_1936.png">
+            <img id = "1956" src="img/cover/cover_1956.png">
+            <img id = "1995" src="img/cover/cover_1995.png">
+        </div>    
+            
         <div class = "Gscreen" id ="Gscreen">    
+            
             <div id = "jan">  
                 <img id = "jan-b" src="img/jan/jan1b.png">
                 <img id = "jan-o" src="img/jan/jan1o.png">
@@ -74,8 +83,81 @@
                 <img id = "zheng-r" src="img/zheng/zheng1r.png">
                 <input type="button" id = "zheng-boss" class="zheng-boss">
             </div>
+            
+            <div id = "jan">  
+                <img id = "jan-b" src="img/jan/jan2b.png">
+                <img id = "jan-o" src="img/jan/jan2o.png">
+                <img id = "jan-r" src="img/jan/jan2r.png">
+                <input type="button" id = "jan-boss" class="jan-boss">
+            </div>
+            
+            <div id = "fu">
+                <img id = "fu-b" src="img/fu/fu2b.png">
+                <img id = "fu-o" src="img/fu/fu2o.png">
+                <img id = "fu-r" src="img/fu/fu2r.png">
+                <input type="button" id = "fu-boss" class="fu-boss">
+            </div>
+            
+            <div id = "zheng">
+                <img id = "zheng-b" src="img/zheng/zheng2b.png">
+                <img id = "zheng-o" src="img/zheng/zheng2o.png">
+                <img id = "zheng-r" src="img/zheng/zheng2r.png">
+                <input type="button" id = "zheng-boss" class="zheng-boss">
+            </div>
+            
+            <div id = "jan">  
+                <img id = "jan-b" src="img/jan/jan3b.png">
+                <img id = "jan-o" src="img/jan/jan3o.png">
+                <img id = "jan-r" src="img/jan/jan3r.png">
+                <input type="button" id = "jan-boss" class="jan-boss">
+            </div>
+                    
+            <div id = "fu">
+                <img id = "fu-b" src="img/fu/fu3b.png">
+                <img id = "fu-o" src="img/fu/fu3o.png">
+                <img id = "fu-r" src="img/fu/fu3r.png">
+                <input type="button" id = "fu-boss" class="fu-boss">
+            </div>
+                    
+            <div id = "zheng">
+                <img id = "zheng-b" src="img/zheng/zheng3b.png">
+                <img id = "zheng-o" src="img/zheng/zheng3o.png">
+                <img id = "zheng-r" src="img/zheng/zheng3r.png">
+                <input type="button" id = "zheng-boss" class="zheng-boss">
+            </div>
+            
+            <div id = "jan">  
+                <img id = "jan-b" src="img/jan/jan4b.png">
+                <img id = "jan-o" src="img/jan/jan4o.png">
+                <img id = "jan-r" src="img/jan/jan4r.png">
+                <input type="button" id = "jan-boss" class="jan-boss">
+            </div>
+                    
+            <div id = "fu">
+                <img id = "fu-b" src="img/fu/fu4b.png">
+                <img id = "fu-o" src="img/fu/fu4o.png">
+                <img id = "fu-r" src="img/fu/fu4r.png">
+                <input type="button" id = "fu-boss" class="fu-boss">
+            </div>
+                    
+            <div id = "zheng">
+                <img id = "zheng-b" src="img/zheng/zheng4b.png">
+                <img id = "zheng-o" src="img/zheng/zheng4o.png">
+                <img id = "zheng-r" src="img/zheng/zheng4r.png">
+                <input type="button" id = "zheng-boss" class="zheng-boss">
+            </div>
         </div>
-        <div id="all" onclick="next()">
+        
+        
+        <div id="all" onclick="next()"></div>
+        
+        <video id = "water" preload="auto">
+            <source src="img/water%20splash.mp4" type="video/mp4">
+        </video>
+        <video id = "End" preload="auto">
+            <source src="img/End.mp4" type="video/mp4">
+        </video>
+        <img id = "player" src="img/player.png">
         <button class="next">Next</button>
     </body>
 </html>

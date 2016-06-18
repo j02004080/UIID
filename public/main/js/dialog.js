@@ -110,7 +110,7 @@ function NewsetGame()
 }  
 
  function diaMaintain(){
-	for(;diaNumber>3;diaNumber--){
+	for(;diaNumber>4;diaNumber--){
         document.getElementById("all").removeChild( document.getElementById("all").firstChild);
 	}
  }

@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended:true
 }));
+
 app.get('/', function(req, res){
   res.redirect('/First Page');
 });
@@ -61,16 +62,21 @@ app.get('/main', function(req, res){
 });
 
 
+function randomString(length, chars) {
+    var result = '';
+    for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+    return result;
+}
 
 
-app.post('/ask', function(req,res){
-  var id = req.body.ID;
+app.get('/ask', function(req,res){
   var i;
+  var id = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
   var jsonfile = fs.readFileSync('name.json');
   var config = JSON.parse(jsonfile);
-  
+  console.log(id); 
   res.cookie('player', id, {signed:true});
-  res.redirect("/main");
+  res.redirect('/main');
 });
 
 app.post('/getdata', function(req, res){

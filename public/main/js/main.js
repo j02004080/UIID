@@ -66,13 +66,23 @@ function showStr(str){
             }
         }
 
+
 $(document).ready(function() {
    
     if(str < 3){
         showStr(str);
         StrCount();   
     }
+    var button1 = true;
+    var button2 = true;
+    $(window).load(function() {  document.getElementById("hideAll").style.display = "none"; });
     
+    var vid = document.getElementById('water');
+    vid.play();
+    vid.onended = function(){
+        console.log('end');
+        $('#water').hide();
+    }
     $('.button1, .ON1, .OFF1').click(function(){
             if(button1 == true){
                 $('.button1').animate({
@@ -101,7 +111,7 @@ $(document).ready(function() {
         $('.menubut').click(function(){
             $('.setMenu').animate({
                 top:'0%'},200);
-            $('#jan, #fu, #zheng').click(function(){
+            $('#player').click(function(){
                 $('.setMenu').animate({
                     top:'-100%'},200);
             });
@@ -119,10 +129,5 @@ $(document).ready(function() {
                     height:'0%'},200);
             });
         });
-  
-  $(window).on('beforeunload', function(e){
-    $.post('/leave', function(){
-      console.log('bye');
-    });
-  });
+    
 });
