@@ -158,6 +158,13 @@ $(document).ready(function() {
         back("map");    
     }); 
     
+    $(".collectbut").click(function(){
+        go("collect", 0, 100, 100); 
+    });
+    $("#collect_back").click(function(){
+        back("collect");
+    });
+
     $('.jan-boss, .fu-boss, .zheng-boss').click(function(){
             $('#all').animate({
                 height: '40%'},200);
