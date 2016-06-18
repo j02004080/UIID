@@ -39,7 +39,7 @@
           <img  id="shards"/>
         </div>
         <div id="mis" class="stuff">
-          <img src="img/mis.png"/>
+          
         </div>
          <div id="collect" class="stuff">
           
@@ -175,6 +175,13 @@
         </video>
         <img id = "player" src="img/player.png">
         <button class="next">Next</button>
-          
+        
+        <script>
+            $(window).on('beforeunload', function (e) {
+        $.post('/leave', {action:"dialog", dialogID:DialogID}, function()           {
+            console.log('bye');
+        });
+    });
+        </script>
     </body>
 </html>

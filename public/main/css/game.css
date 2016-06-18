@@ -56,7 +56,40 @@
         border: none;
         font-size:0;
         cursor:pointer;
+        z-index: 6; 
+        display: none;
+    }
+
+
+#fu-boss{
+        
+        position: absolute;
+        top:27%;
+        left:50%;
+        width: 10%;
+        height: 10%;
+        background-color: transparent;
+        border: none;
+        font-size:0;
+        cursor:pointer;
         z-index: 6;   
+        display: none;
+    }
+
+
+#zheng-boss{
+        
+        position: absolute;
+        top:30%;
+        left:40%;
+        width: 10%;
+        height: 10%;
+        background-color: transparent;
+        border: none;
+        font-size:0;
+        cursor:pointer;
+        z-index: 6;
+        display: none;
     }
 #player{
         position:absolute;

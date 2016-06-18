@@ -77,12 +77,8 @@ $(document).ready(function() {
     var button2 = true;
     $(window).load(function() {  document.getElementById("hideAll").style.display = "none"; });
     
-    var vid = document.getElementById('water');
-    vid.play();
-    vid.onended = function(){
-        console.log('end');
-        $('#water').hide();
-    }
+    
+    
   
   var ani_time = 500;
   var active_id = "0";
@@ -147,6 +143,10 @@ $(document).ready(function() {
 	
 	  var counter = 1;
     
+    $.post('/getdata', function(data){
+        counter = parseInt(data.map) + 1;
+    });
+    
     $(".mapbut").click(function(){
         document.getElementById("shards").src="img/map"+counter+"-06.png";
         $("#shards").show();
@@ -156,8 +156,6 @@ $(document).ready(function() {
     
     $("#map_back").click(function(){
         back("map");    
-        if (counter <= 12)
-        counter += 1;
     }); 
     
     $('.jan-boss, .fu-boss, .zheng-boss').click(function(){

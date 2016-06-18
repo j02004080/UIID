@@ -71,11 +71,20 @@ function randomString(length, chars) {
 
 app.get('/ask', function(req,res){
   var i;
-  var id = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+  var playerN = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
   var jsonfile = fs.readFileSync('name.json');
   var config = JSON.parse(jsonfile);
-  console.log(id); 
-  res.cookie('player', id, {signed:true});
+  var data = {
+              name:playerN,
+              DialogID:"00_01_01",
+              str:0,
+              map:0,
+              mis:" "
+            };
+  config.push(data);
+  var configJSON = JSON.stringify(config,null,'\t');
+  fs.writeFileSync('name.json', configJSON);
+  res.cookie('player', playerN, {signed:true});
   res.redirect('/main');
 });
 
@@ -95,23 +104,38 @@ app.post('/getdata', function(req, res){
     }
     console.log(data.name);
   }
+  
+    res.send(data);
+  
 });
 
 
-
 app.post('/leave', function(req, res){
-  var id = req.signedCookies.player;
   var jsonfile = fs.readFileSync('name.json');
+  var playerN = req.signedCookies.player;
   var config = JSON.parse(jsonfile);
-  var data = {
-              name:id,
-              conversation:"0",
-              str:0,
-              map:0
-            };
+  var data = {};
+  
+  if(playerN){
+    
+    for(i = 0; i < config.length; i++){
+      if(config[i].name == playerN){
+        data = config[i];
+      } 
+    }
+    console.log(data.name);
+  }
+  if(req.body.action == 'mission'){
+    data.mis = data.mis + " " + req.body.mission;
+  }
+  else if(req.body.action == 'map'){
+    data.map = req.body.map;
+  }
+  else if(req.body.action == 'dialog'){
+    data.DialogID = req.body.dialogID;
+  }
   console.log('bye');
-  config.push(data);
-  var configJSON = JSON.stringify(config);
+  var configJSON = JSON.stringify(config, null, '\t');
   fs.writeFileSync('name.json', configJSON);
 });
 

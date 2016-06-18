@@ -2,7 +2,8 @@ $(document).ready(function() {
     
     var Store = document.getElementById("Gscreen").children;
     var No=1;
-    var i=1;
+    var i=0;
+    var b;
     var ary=[
             "到江水號吃碗冰並合照",
             "到布街參觀，拿一張名片",
@@ -13,28 +14,39 @@ $(document).ready(function() {
             "回答問題, 我們遊戲APP的名稱?",
             "和鄭記土魠魚羹合照"];
     
-    console.log(Store[0].children[0]);
-    $('#jan-b').addClass("showb");
-    $('#jan-o').addClass("showo");
-    $('#jan-r').addClass("showr");
-    $('#jan-boss').addClass("showboss");
+    $.post('/getdata', {action:'map'}, function(data){
+        i = parseInt(data.map);
+    }).done(function(){
+        console.log(Store[0].children[0]);
+//    $('#jan-b').addClass("showb");
+//    $('#jan-o').addClass("showo");
+//    $('#jan-r').addClass("showr");
+    Store[i].children[0].className += "showb";
+    Store[i].children[1].className += "showo";
+    Store[i].children[2].className += "showr";
+    Store[i].children[3].className += " showboss";
     $('.showb, .showo, .showr, .showboss').show();
     $('.showb, .showo, .showr').css({"left":"0%"});
     $('.showb').css({"z-index":"1"});
     $('.showo').css({"z-index":"2"});
     $('.showr').css({"z-index":"3"});
-    Store[i].children[0].className += "nextb";
-    Store[i].children[1].className += "nexto";
-    Store[i].children[2].className += "nextr";
+    
+    Store[i+1].children[0].className += "nextb";
+    Store[i+1].children[1].className += "nexto";
+    Store[i+1].children[2].className += "nextr";
     $('.nextb, .nexto, .nextr').show();
     $('.nextb').css({"z-index":"1"});
     $('.nexto').css({"z-index":"2"});
     $('.nextr').css({"z-index":"3"});
+        
+        
+    });
+    
     
     var endvid = document.getElementById('End'); 
     
     $(".next").click(function(){
-        if(i>=12){
+        if(i>=11){
             $('#hideAll').fadeIn(500,function(){
                 $('#End').fadeIn(500, function(){
                     endvid.play();
@@ -57,7 +69,7 @@ $(document).ready(function() {
                 $('.showboss').removeClass('showboss');
                 $('.showb').removeClass('showb');
                 $('.nextb').removeClass('nextb');
-                Store[i].children[0].className += "showb";
+                Store[i+1].children[0].className += "showb";
                 $('.showo').animate({
                     left:'-100%'}, 400);
                 $('.nexto').animate({
@@ -68,8 +80,8 @@ $(document).ready(function() {
                     complete:function(){
                         $('.showo').removeClass("showo");
                         $('.nexto').removeClass("nexto");
-                        Store[i].children[3].className += " showboss";
-                        Store[i].children[1].className += "showo";
+                        Store[i+1].children[3].className += " showboss";
+                        Store[i+1].children[1].className += "showo";
                         $('.showr').animate({
                             left:'-100%'}, 500);
                         $('.nextr').animate({
@@ -81,13 +93,13 @@ $(document).ready(function() {
                                 $('.showr').removeClass('showr');
                                 $('.nextr').removeClass('nextr');
 
-                                Store[i].children[2].className += "showr";
+                                Store[i+1].children[2].className += "showr";
                                 $('.showboss').show();
                                 i = i + 1;
                                 console.log(i);
-                                Store[i].children[0].className += "nextb";
-                                Store[i].children[1].className += "nexto"; 
-                                Store[i].children[2].className += "nextr";
+                                Store[i+1].children[0].className += "nextb";
+                                Store[i+1].children[1].className += "nexto"; 
+                                Store[i+1].children[2].className += "nextr";
                                 $('.nextb, .nexto, .nextr').show();
                                 $('.nextb').css({"z-index":"1"});
                                 $('.nexto').css({"z-index":"2"});
@@ -111,15 +123,15 @@ $(document).ready(function() {
                 });
             }
         });
-                                    if(i==3){
+                                    if(i==2){
                                         $('#1936').fadeIn(200);
                                     }
 
-                                    else if(i==6){
+                                    else if(i==5){
                                         $('#1956').fadeIn(200);
                                     }
 
-                                    else if(i==9){
+                                    else if(i==8){
                                         $('#1995').fadeIn(200);
                                     }
         
@@ -160,6 +172,9 @@ $(document).ready(function() {
                     '你已經接受任務',
                     'success'
                   );
+                    $.post('/leave', {action:"mission", mission:mis}, function(){
+            console.log('mission in');
+        });
                     }, function(dismiss) {
                       // dismiss can be 'cancel', 'overlay', 'close', 'timer'
                       if (dismiss === 'cancel') {
@@ -171,4 +186,9 @@ $(document).ready(function() {
                     }
                 })
         }
+    $(window).on('beforeunload', function (e) {
+        $.post('/leave', {action:"map", map:i}, function(){
+            console.log('bye');
+        });
+    });
 });

@@ -1,4 +1,20 @@
-$(document).ready(function(){	
+$(document).ready(function(){
+    $.post('/getdata', {action:'dialog'}, function(data){
+        DialogID = data.DialogID;
+    }).done(function(){
+        if(DialogID == '00_01_01'){
+            var vid = document.getElementById('water');
+            vid.play();
+            vid.onended = function(){
+                console.log('end');
+                $('#water').hide();
+            }
+        }
+        else{
+            $('#water').hide();
+        }
+    });
+    
 	if(use=="0"){
 	use="1";
 	$.ajax({
@@ -15,6 +31,7 @@ $(document).ready(function(){
 	});
 	}
 });
+
 function next(){
 	if((JSON.parse(DialogSet)[DialogID].Next["Next1"].Txt=="N"&&option==0)||optChoice=="done"){
 		DialogID = JSON.parse(DialogSet)[DialogID].Next["Next"+index.toString()].ID;
@@ -115,6 +132,7 @@ function NewsetGame()
 	}
  }
  
+    
 
 //var first_span = document.createElement('span');
 //var second_span = document.createElement('span');
