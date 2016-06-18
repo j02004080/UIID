@@ -24,7 +24,6 @@
         background-size:cover;
         overflow: hidden;
     }
-    
     .mapbut{
         position:absolute;
         left:0%;
@@ -59,6 +58,42 @@
         width:20%;
         z-index: 5;
         cursor: pointer;
+    }
+    .stuff{
+      position: absolute;
+      top: 1.5vh;
+      z-index: 10;
+      display: none;
+      height: 5px;
+      width: 5px;
+    }  
+
+    #map{
+      left: 8vw;
+    }
+    #map_back{
+      position: absolute;
+      //border: black solid 2px;
+      top: 78vh;
+      width: 18%;
+      height: 10%;
+      margin: 0 41%;
+      border-radius: 50%;
+      display: none;  
+      z-index: 8;
+    } 
+    #shards{
+      position: absolute;    
+      top: 0; 
+      z-index: 0;
+      display: none;
+    }
+  
+    #mis{
+      left: 16vw;
+    }
+    #collect{
+      left: 24vw;
     }
     
     .str3{
