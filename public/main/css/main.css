@@ -1,5 +1,19 @@
 @media screen and (max-width: 600px){
-    
+    a{
+        color:inherit;
+    }
+    #hideAll
+    {
+       position: fixed;
+       left: 0px; 
+       right: 0px; 
+       top: 0px; 
+       bottom: 0px; 
+       background-color: white;
+       z-index: 50; /* Higher than anything else in the document */
+        display: block;
+
+    }
     img{
         max-width: 100%;
     }
@@ -153,40 +167,40 @@
     #s1{
         position:absolute;
         left:5%;
-        top:15%;
-        font-size: 200%;
+        top:12%;
+        font-size: 180%;
         font-weight: 1200;
-        font-family: Microsoft JhengHei;
+        font-family: "Microsoft JhengHei";
     }
     
     #s2{
         position:absolute;
         left:5%;
-        top:27%;
-        font-size: 200%;
-        font-family: Microsoft JhengHei;
+        top:22%;
+        font-size: 180%;
+        font-family: "Microsoft JhengHei";
     }
     
     #s3{
         position: absolute;
-        left:26%;
-        bottom:42%;
-        font-size: 220%;
-        font-family: Microsoft JhengHei;
+        left:28%;
+        top:39%;
+        font-size: 180%;
+        font-family: "Microsoft JhengHei";
     }
     
     #s4{
         position: absolute;
-        left:26%;
-        bottom: 24%;
-        font-size: 220%;
-        font-family: Microsoft JhengHei;
+        left:28%;
+        top: 54%;
+        font-size: 180%;
+        font-family: "Microsoft JhengHei";
     }
     
     .ON1{
         position:absolute;
         right:33%;
-        top:17.5%;
+        top:15%;
         width: 10%;
         z-index: 4;
     }
@@ -194,7 +208,7 @@
     .OFF1{
         position:absolute;
         right:15%;
-        top:17.5%;
+        top:15%;
         width: 12%;
         z-index: 4;
     }
@@ -202,7 +216,7 @@
     .ON2{
         position:absolute;
         right:33%;
-        top:28.5%;
+        top:25%;
         width: 10%;
         z-index: 4;
     }
@@ -210,7 +224,7 @@
     .OFF2{
         position:absolute;
         right:15%;
-        top:28.5%;
+        top:25%;
         width: 12%;
         z-index: 4;
     }
@@ -219,7 +233,7 @@
         position:absolute;
         width:15%;
         right:30%;
-        top:16%;
+        top:14%;
         z-index: 3;
     }
     
@@ -227,7 +241,7 @@
         position:absolute;
         width:15%;
         right:30%;
-        top:27%;
+        top:23.5%;
         z-index: 3;
     }
     
@@ -235,7 +249,7 @@
         position:absolute;
         width: 52%;
         left:24%;
-        bottom: 25%;
+        top: 38%;
         
     }
     
@@ -243,7 +257,7 @@
         position:absolute;
         width: 52%;
         left:24%;
-        bottom: 43%;
+        top: 53%;
         
     }
     
@@ -252,5 +266,18 @@
         bottom: 0%;
         z-index: 10;
         
+    }
+    
+    #water{
+        position:absolute;
+        left:-100%;
+        z-index: 20;
+    }
+    
+    #End{
+        position: absolute;
+        left:-100%;
+        z-index: 51;
+        display: none;
     }
 }

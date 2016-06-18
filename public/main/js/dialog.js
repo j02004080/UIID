@@ -1,10 +1,9 @@
-var use;
 $(document).ready(function(){	
 	if(use=="0"){
 	use="1";
 	$.ajax({
 	    method: "POST",
-	    url: "dialog.php",
+	    url: "/dialog",
 	    dataType: 'text',
 	    data: {call: DialogID,actions: "fetchdialog"}
 	    }).done(function(data){
@@ -23,7 +22,7 @@ function next(){
 		index=1;
 		$.ajax({
 			method: "POST",
-			url: "dialog.php",
+			url: "/dialog",
 			dataType: 'text',
 			data: {call: DialogID,actions: "fetchdialog"}
 		}).done(function(data){
@@ -71,7 +70,7 @@ function o(){
 		}
 	}
 }
-function NewsetGame()//根據對話設置場景
+function NewsetGame()
 {
 	if(JSON.parse(DialogSet)[DialogID].CharacterName=="n"){
 		diaNumber++;
@@ -91,7 +90,23 @@ function NewsetGame()//根據對話設置場景
 		document.getElementById("all").appendChild(content);
 		diaMaintain();
 	}
-	
+	if(DialogID==""){
+		mapName="fu";
+	}else if(DialogID==""){
+		mapName="zheng";
+	}else if(DialogID==""){
+		mapName="jan";
+	}else if(DialogID==""){
+		mapName="fu";
+	}else if(DialogID==""){
+		mapName="zheng";
+	}else if(DialogID==""){
+		mapName="jan";
+	}else if(DialogID==""){
+		mapName="fu";
+	}else if(DialogID==""){
+		mapName="zheng";
+	}
 }  
 
  function diaMaintain(){
@@ -99,6 +114,7 @@ function NewsetGame()//根據對話設置場景
         document.getElementById("all").removeChild( document.getElementById("all").firstChild);
 	}
  }
+ 
 
 //var first_span = document.createElement('span');
 //var second_span = document.createElement('span');

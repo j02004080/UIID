@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var credentials = require('./credential.js');
+var exec = require("child_process").exec;
 var app = express();
 var fs = require('fs');
 app.listen(8101, function(){
@@ -12,6 +13,10 @@ app.listen(8101, function(){
 
 app.use(express.static('public/'));
 app.use(cookieParser(credentials.cookieSecret));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended:true
+}));
 
 app.get('/', function(req, res){
   res.redirect('/First Page');
@@ -19,6 +24,15 @@ app.get('/', function(req, res){
 
 app.get('/lobby', function(req, res){
   res.sendFile(__dirname+ '/public/lobby/lobby.html');
+});
+
+app.post('/dialog', function(req, res){
+  var id = req.body.call;
+  var actions = req.body.actions;
+  var argv = "php dialog.php " + id + " " + actions;
+  exec(argv, function(error, stdout, stderr){
+    res.send(stdout);
+  });
 });
 
 app.get('/test', function(req, res){
@@ -36,7 +50,9 @@ app.get('/test', function(req, res){
   }
   //res.send('hi');
 });
-
+app.get('/continue', function(req, res){
+  res.redirect('/main');
+});
 app.get('/First Page',function(req,res){
   res.sendFile(__dirname+'/public/First Page/index.html');
 });
@@ -45,28 +61,46 @@ app.get('/main', function(req, res){
   res.sendFile(__dirname+'/public/main/main.html');
 });
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended:true
-}));
+
+function randomString(length, chars) {
+    var result = '';
+    for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+    return result;
+}
 
 
-app.post('/ask', function(req,res){
-  var id = req.body.ID;
+app.get('/ask', function(req,res){
+  var i;
+  var id = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+  var jsonfile = fs.readFileSync('name.json');
+  var config = JSON.parse(jsonfile);
+  console.log(id); 
+  res.cookie('player', id, {signed:true});
+  res.redirect('/main');
+});
+
+app.post('/getdata', function(req, res){
+  var playerN;
+  playerN = req.signedCookies.player;
   var i;
   var jsonfile = fs.readFileSync('name.json');
   var config = JSON.parse(jsonfile);
-  for(i = 0; i < config.length; i++){
-    if(config[i].name == id){
+  
+  if(playerN){
+    
+    for(i = 0; i < config.length; i++){
+      if(config[i].name == playerN){
         data = config[i];
-        console.log(data.name);
       } 
     }
-  res.redirect("/main");
+    console.log(data.name);
+  }
 });
 
+
+
 app.post('/leave', function(req, res){
-  
+  var id = req.signedCookies.player;
   var jsonfile = fs.readFileSync('name.json');
   var config = JSON.parse(jsonfile);
   var data = {
@@ -75,7 +109,7 @@ app.post('/leave', function(req, res){
               str:0,
               map:0
             };
-
+  console.log('bye');
   config.push(data);
   var configJSON = JSON.stringify(config);
   fs.writeFileSync('name.json', configJSON);
