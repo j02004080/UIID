@@ -172,13 +172,6 @@ $(document).ready(function() {
                     height:'0%'},200);
             });
         });
-    $(".collectbut").click(function(){
-			  go("collect", 0, 100, 100);  
-          
-    });
-    $("#collect_back").click(function(){
-      back("collect");
-    })
     
     function go(id, t, w, h){
 		  active_id = id;
