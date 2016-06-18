@@ -76,36 +76,13 @@ $(document).ready(function() {
         counter += 1;
     }); 
     
-    $(".misbut").click(function(){
-      if (active_id === "0"){
-          
-			  go("mission", 15, 80, 75);
-      }
-      else {
-        var a_test = active_id;
-        back(active_id);
-        if (a_test !== "mission"){
-          setTimeout(function(){
-            go("mission", 15, 80, 75);
-          }, ani_time)
-        }
-     } 
-    });
     $(".collectbut").click(function(){
-      if (active_id === "0"){
+			  go("collect", 0, 100, 100);  
           
-			  go("collect", 20, 85, 75);
-      }
-      else {
-        var a_test = active_id;
-        back(active_id);
-        if (a_test !== "collect"){
-          setTimeout(function(){
-            go("collect", 20, 85, 75);
-          }, ani_time)
-        }
-     } 
     });
+    $("#collect_back").click(function(){
+      back("collect");
+    })
     
     function go(id, t, w, h){
 		  active_id = id;
