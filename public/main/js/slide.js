@@ -13,7 +13,7 @@ $(document).ready(function() {
             "回答問題，西市場在日治時期稱作?",
             "回答問題, 我們遊戲APP的名稱?",
             "和鄭記土魠魚羹合照"];
-    
+    var stary = ["00_06_01","00_08_01","00_10_01","00_10_31","00_11_23","00_12_30","00_14_23","00_15_28","00_17_05"];
     $.post('/getdata', {action:'map'}, function(data){
         i = parseInt(data.map);
     }).done(function(){
@@ -42,10 +42,11 @@ $(document).ready(function() {
         
     });
     
-    
     var endvid = document.getElementById('End'); 
     
-    $(".next").click(function(){
+            
+    $("#all").click(function(){
+        
         if(i>=11){
             $('#hideAll').fadeIn(500,function(){
                 $('#End').fadeIn(500, function(){
@@ -56,6 +57,9 @@ $(document).ready(function() {
                 });
             });
         }
+        for(g=0;g<stary.length;g++){
+            if(DialogID == stary[g]){
+                stary[g] = null;
         console.log(i);
         $('.showb').animate({
             left:'-100%'}, 400);
@@ -124,21 +128,21 @@ $(document).ready(function() {
             }
         });
                                     if(i==2){
-                                        $('#1936').fadeIn(200);
+                                        $('#1956').fadeIn(200);
+                                       
                                     }
 
                                     else if(i==5){
-                                        $('#1956').fadeIn(200);
+                                         $('#1995').fadeIn(200);
                                     }
 
-                                    else if(i==8){
-                                        $('#1995').fadeIn(200);
-                                    }
+                                
 
         $.post('/leave', {action:"map", map:i+1}, function(){
             console.log('bye');
         });
-        
+            }
+        };
     });
     $('#1936, #1956, #1995').click(function(){
         $(this).fadeOut(200);

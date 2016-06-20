@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
         <link href="css/dialog.css" rel = "stylesheet" type="text/css">
         <link href = "css/main.css" rel = "stylesheet" type="text/css">
@@ -47,8 +48,13 @@
           <div  id="map_back"></div>
           <img  id="shards"/> 
         </div>
+        
         <div id="mis" class="stuff">
-          
+            <img src="img/notebook.png"/>
+            <img id="collect_img" src="img/notebook_button.png"/>
+            <div id="mis_back"></div>
+            <p>任務</p>
+            <span id="misbox"></span>
         </div>
           
         <div id="collect" class="stuff">
@@ -153,18 +159,18 @@
                 <input type="button" id = "jan-boss" class="jan-boss">
             </div>
                     
-            <div id = "fu">
-                <img id = "fu-b" src="img/fu/fu1b.png">
-                <img id = "fu-o" src="img/fu/fu1o.png">
-                <img id = "fu-r" src="img/fu/fu1r.png">
-                <input type="button" id = "fu-boss" class="fu-boss">
-            </div>
-                    
             <div id = "zheng">
                 <img id = "zheng-b" src="img/zheng/zheng1b.png">
                 <img id = "zheng-o" src="img/zheng/zheng1o.png">
                 <img id = "zheng-r" src="img/zheng/zheng1r.png">
                 <input type="button" id = "zheng-boss" class="zheng-boss">
+            </div>
+            
+            <div id = "fu">
+                <img id = "fu-b" src="img/fu/fu1b.png">
+                <img id = "fu-o" src="img/fu/fu1o.png">
+                <img id = "fu-r" src="img/fu/fu1r.png">
+                <input type="button" id = "fu-boss" class="fu-boss">
             </div>
             
             <div id = "jan">  
@@ -188,6 +194,13 @@
                 <input type="button" id = "zheng-boss" class="zheng-boss">
             </div>
             
+            <div id = "fu">
+                <img id = "fu-b" src="img/fu/fu3b.png">
+                <img id = "fu-o" src="img/fu/fu3o.png">
+                <img id = "fu-r" src="img/fu/fu3r.png">
+                <input type="button" id = "fu-boss" class="fu-boss">
+            </div>
+            
             <div id = "jan">  
                 <img id = "jan-b" src="img/jan/jan3b.png">
                 <img id = "jan-o" src="img/jan/jan3o.png">
@@ -195,12 +208,7 @@
                 <input type="button" id = "jan-boss" class="jan-boss">
             </div>
                     
-            <div id = "fu">
-                <img id = "fu-b" src="img/fu/fu3b.png">
-                <img id = "fu-o" src="img/fu/fu3o.png">
-                <img id = "fu-r" src="img/fu/fu3r.png">
-                <input type="button" id = "fu-boss" class="fu-boss">
-            </div>
+            
                     
             <div id = "zheng">
                 <img id = "zheng-b" src="img/zheng/zheng3b.png">
@@ -232,7 +240,7 @@
         </div>
         
         
-        <div id="all" onclick="next()"></div>
+        <div class="dialog" id="all" onclick="next()"></div>
         
         <!--<video id = "water" preload="auto">
             <source src="img/water%20splash.mp4" type="video/mp4">
@@ -241,9 +249,9 @@
             <source src="img/End.mp4" type="video/mp4">
         </video>
         <img id = "player" src="img/player.png">
-        <button class="next">Next</button>
         
         <script>
+            console.log(DialogID);
             $(window).on('beforeunload', function (e) {
         $.post('/leave', {action:"dialog", dialogID:DialogID}, function()           {
             console.log('bye');

@@ -446,5 +446,602 @@
 		"str": 0,
 		"map": "1",
 		"mis": " "
+	},
+	{
+		"name": "zxTWRPkmWp2Ho4wi12HTavJ2FCIdeu3l",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": " "
+	},
+	{
+		"name": "wscHM2GNgmJMT9Lw21awvDEaKlbqWG6D",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "1",
+		"mis": " "
+	},
+	{
+		"name": "2w3Yi2frmHEc8AWXleyjBmuH6S4KJXhC",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "1",
+		"mis": " "
+	},
+	{
+		"name": "97qeYn1VBsxize67C81LRGHifR1p51QL",
+		"DialogID": "00_01_07",
+		"str": 0,
+		"map": "1",
+		"mis": " "
+	},
+	{
+		"name": "axaxTvOGzI3a0obO4uGaq2gdSGGHwhG0",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": " "
+	},
+	{
+		"name": "icqP4378B4OES125pErDt1ja6IxFHpRQ",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "0",
+		"mis": " "
+	},
+	{
+		"name": "FgRMQZJdjsGS0ELLKgLfJ8YtnDBr2xsG",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "1",
+		"mis": " "
+	},
+	{
+		"name": "LHcemgTeKILPyzwpG0hZ176VAB9sPOwu",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "W1eYQfgY29wVZqqvuiStVXL34OKIxXcv",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "11",
+		"mis": "回答問題, 我們遊戲APP的名稱? 逛西市場一圈"
+	},
+	{
+		"name": "l0OxKn6aixMIWBbNX5QwWXxeNmOg2v1H",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "0EP1h6OzPnmgNTAlXUD4f0cVUIccDM8j",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "8",
+		"mis": [
+			"逛西市場一圈"
+		]
+	},
+	{
+		"name": "LsrXhYtEosTH53US71eF8P2xUOkNLwAD",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "s9hIygeuGZsku3NgmXXyJ41wyVIPpaws",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "5",
+		"mis": 1
+	},
+	{
+		"name": "yM4hFW9iMk0JTSDknyEeRG0Dq3dJNYoh",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": " "
+	},
+	{
+		"name": "zoVqmXrNvIUIZKlMyWry3v2zR9LALIgE",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "3",
+		"mis": "  逛西市場一圈"
+	},
+	{
+		"name": "RKKLnVCXPUrs5HkSFk1aFwW9tSRddgwo",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": " "
+	},
+	{
+		"name": "YLMMEsIQizJo4bnXxgaISyLGYOhnaOOR",
+		"DialogID": "00_01_04",
+		"str": 0,
+		"map": "3",
+		"mis": "  與西市場拱門合照"
+	},
+	{
+		"name": "7nqira3Erp6SqtgYq4qnJDUjS3i7KY3g",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "7B6HXKAb5Rl8oJmWZTa2VXVmeaJuskjF",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "3",
+		"mis": [
+			"與西市場拱門合照"
+		]
+	},
+	{
+		"name": "8ZR4fwlG7DAEqqD1eyhnvsb0dcfJ6iNX",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "ryVDUKYZYgwLZ0yRXRqHzyPQDqcqJGI2",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "2",
+		"mis": [
+			"與西市場拱門合照"
+		]
+	},
+	{
+		"name": "bKQT744ng5CaBdABk0xKqadj0JurSTBj",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "D5coO2QmYkGlqlx0KECmKiuuklD80Q6v",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "kZCgDa4lBXVhhTSaOFkAO6HtUNiVEfxD",
+		"DialogID": "00_01_07",
+		"str": 0,
+		"map": "1",
+		"mis": []
+	},
+	{
+		"name": "1nWr8GlNyQGlXfMunh8Jw0IbjWPn1MmP",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "oDGuFXvpRsET55bm0ZYkjOigEplqORQs",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "1",
+		"mis": []
+	},
+	{
+		"name": "LGBngiuGEPcn4qluhA9auH2njp751Ogp",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "1",
+		"mis": []
+	},
+	{
+		"name": "UTF5VQtzltJXZnxK0CIlFwkl6Jns26Sf",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "fCml5LRoRqy4rDMFMldOJlDNUcbhUwlt",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "5JCk8M2hY4NQfaVi84aZxZAEgiXXGfL3",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "e2tuDCK3Whvh5JbrqPH6Iza9K5YADCzO",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "Eb29NhHU3I22a4MyLa3GMgDgTrPpi3n3",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "rimqM66YZMZmDcGqIdpc4qAYdwCpr0Ap",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "phwNouvQ84PU0JBhk8rqOTKJ6mEjlZQH",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "DEqhn6i8FJoXkmg3w0qthlgcJxyy3LSV",
+		"DialogID": "00_01_31",
+		"str": 0,
+		"map": "0",
+		"mis": []
+	},
+	{
+		"name": "I1ce8SpqdpzpdKBgKpaquIT3AZs49EAb",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "zp7ryL1dODJ82bUTvWmGMMuEwaXbFsSf",
+		"DialogID": "00_04_12",
+		"str": 0,
+		"map": "0",
+		"mis": []
+	},
+	{
+		"name": "CDgNknSNaRJlbwnxe2v60dl4H6qkU6B2",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "UvSL58cSCmkHriCTHsq280Oi4q6UlrDc",
+		"DialogID": "00_03_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "P5tN0jcnFSBpdieATnNLSJleIZvL0ZhY",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "1",
+		"mis": []
+	},
+	{
+		"name": "UjZpQPRhzWnPciJnVeMvBvLI17V4dF7u",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "1",
+		"mis": []
+	},
+	{
+		"name": "wd5BgllgrgmP5zm5KCojqlhLVoZSuX6x",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "n9kYxJIMrHwM3FEgxEBMpwP5sCNK1xwo",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "3",
+		"mis": []
+	},
+	{
+		"name": "CtHnPYDlkZF0O6AKBjSBOGgDAYtq9xx9",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "dzBXQDbHrIfcwknPKccBuRBrCGV1Yc22",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "5",
+		"mis": [
+			"回答問題，西市場在日治時期稱作?"
+		]
+	},
+	{
+		"name": "4fxEtKqhsYZjfB9m9sunCBAhXwyFPyK7",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "7vGlM4c3hGNDwtpYb8z55cpAQMnXJqGI",
+		"DialogID": "00_04_03",
+		"str": 0,
+		"map": "1",
+		"mis": []
+	},
+	{
+		"name": "88BOWSlime9Df9ZPXe8bbP1u1x38a2WB",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": " "
+	},
+	{
+		"name": "Hpk5PGeLWL3yQu6ANcpZzvy1hFvirctI",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "0",
+		"mis": " "
+	},
+	{
+		"name": "JWWJ2pyhkuamqlbkKIZ16B7ksYq2EcRk",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "roJWiZnKgIFg8bKq2lTTq9wUwfQSe1u1",
+		"DialogID": "00_01_14",
+		"str": 0,
+		"map": "9",
+		"mis": []
+	},
+	{
+		"name": "Xk21eJPQIVQ6hVsvhWWgcwTcuhx12Wo8",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "MNutWA3o8igu4WpUkeUDfrCYHqUg3Wq8",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "0",
+		"mis": []
+	},
+	{
+		"name": "DhMJ6Yo7XDjtcK5BFivdJjKD3xAhnWul",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "eC7B07hREmGQnzXQrUswV4ab1asa8fwj",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "1",
+		"mis": []
+	},
+	{
+		"name": "pnl54revh4XPwba50LfiUlnzh7DX8bnu",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "omUeagn054QA7sdgLqtjJmvIsnn7368i",
+		"DialogID": "00_06_01",
+		"str": 0,
+		"map": "5",
+		"mis": []
+	},
+	{
+		"name": "2LBImrnB5Z4moIxbaek9jkLVRQQ1lEXq",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "KOV5ie8mOTSSkXVXP79czNy1y8dMjgkt",
+		"DialogID": "00_06_01",
+		"str": 0,
+		"map": "5",
+		"mis": []
+	},
+	{
+		"name": "qj2IjyLcNBchskjosClcusBvRNSj1HD0",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "7OaivuJaYZXvvkEkmnjSM70nqxkzIlhO",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "2",
+		"mis": [
+			"到江水號吃碗冰並合照",
+			"到江水號吃碗冰並合照"
+		]
+	},
+	{
+		"name": "whBXUlGET3zGDHnm7cZtiUmvFK95p5hP",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "2TnbN0w7czDSrtiooa0ZQAAOmVcRIgHd",
+		"DialogID": "00_10_05",
+		"str": 0,
+		"map": "3",
+		"mis": [
+			"與西市場拱門合照",
+			"與西市場拱門合照"
+		]
+	},
+	{
+		"name": "6w7AZxPHyom95Q5OYrIaJXwiPqxMmi2f",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "eYCdnXgB5euf4ZOqHT4j2SL0o9LhlMNH",
+		"DialogID": "00_02_05",
+		"str": 0,
+		"map": "0",
+		"mis": []
+	},
+	{
+		"name": "mRzeGcxRPAfrAFEGH8wEGfnzSx954cOd",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "laLsQBczxRLuBVWcRXAjEnHOE63nUlrn",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "3",
+		"mis": [
+			"到布街參觀，拿一張名片"
+		]
+	},
+	{
+		"name": "sO0LEgmOavVmhXjMzaDnnPChSJUy8y47",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "qXg4qh2AUrE5n4XU1wED4ermrWXxHlKG",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "1",
+		"mis": []
+	},
+	{
+		"name": "JfbtbVfrfxrkdKNn9QubJvSeYs0IvCrR",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "61Ji1CLqNMZITYVk694pQuRydpnm0YsE",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": "0",
+		"mis": []
+	},
+	{
+		"name": "08bYQ5wd56OqLa5bVoo1OsPxt9LHXhF7",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "WDaGVt4x4Xc7XvqtVB2Xoahro8xYtBJ8",
+		"DialogID": "00_01_14",
+		"str": 0,
+		"map": "0",
+		"mis": []
+	},
+	{
+		"name": "uRcDpSVBs0IJrFriC4ULLi0glZKBsnba",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "8VcqpltpaaOFjriX4G3DsHzE94kurygo",
+		"DialogID": "00_05_12",
+		"str": 0,
+		"map": "1",
+		"mis": []
+	},
+	{
+		"name": "uBngFOVKeS9xRXGVF3l0TvMbfV7qqtYl",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "Gau4UqogOiWKOa3yjLsbD3L151L1xL5t",
+		"DialogID": "00_02_04",
+		"str": 0,
+		"map": "0",
+		"mis": []
+	},
+	{
+		"name": "yyv5hO01B9NYehtl7p1njWPfUulHVkKi",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "BGQR0DrFGmVxnGZyGW8CKK0AcIAZV2Re",
+		"DialogID": "00_02_04",
+		"str": 0,
+		"map": "0",
+		"mis": []
+	},
+	{
+		"name": "pWnMl2XSaIiBppmS944LO5hVvAhUEY7j",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "70TkrldjFpY36DEej919ogei4FhQYNti",
+		"DialogID": "00_02_04",
+		"str": 0,
+		"map": "0",
+		"mis": []
+	},
+	{
+		"name": "bSxZZrGhObWCgkWVhI4Zxz5wJ8svz11k",
+		"DialogID": "00_01_01",
+		"str": 0,
+		"map": 0,
+		"mis": []
+	},
+	{
+		"name": "LK28WSPsIdpFje2AJwvrFihknneVYXrJ",
+		"DialogID": "00_01_07",
+		"str": 0,
+		"map": 0,
+		"mis": []
 	}
 ]

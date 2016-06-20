@@ -7,7 +7,7 @@ var credentials = require('./credential.js');
 var exec = require("child_process").exec;
 var app = express();
 var fs = require('fs');
-app.listen(8104, function(){
+app.listen(8105, function(){
   console.log('server run');
 });
 
@@ -51,7 +51,12 @@ app.get('/test', function(req, res){
   //res.send('hi');
 });
 app.get('/continue', function(req, res){
-  res.redirect('/main');
+  if(req.signedCookies.player){
+    res.redirect('/main');
+    }
+  else{
+    res.redirect('/ask');
+    }
 });
 app.get('/First Page',function(req,res){
   res.sendFile(__dirname+'/public/First Page/index.html');
@@ -79,7 +84,7 @@ app.get('/ask', function(req,res){
               DialogID:"00_01_01",
               str:0,
               map:0,
-              mis:" "
+              mis:[]
             };
   config.push(data);
   var configJSON = JSON.stringify(config,null,'\t');
@@ -126,7 +131,7 @@ app.post('/leave', function(req, res){
     console.log(data.name);
   }
   if(req.body.action == 'mission'){
-    data.mis = data.mis + " " + req.body.mission;
+    (data.mis).push(req.body.mission);
   }
   else if(req.body.action == 'map'){
     data.map = req.body.map;

@@ -1,20 +1,10 @@
-$(document).ready(function(){
-    $.post('/getdata', {action:'dialog'}, function(data){
-        DialogID = data.DialogID;
-    }).done(function(){
-        /*if(DialogID == '00_01_01'){
-            var vid = document.getElementById('water');
-            vid.play();
-            vid.onended = function(){
-                console.log('end');
-                $('#water').hide();
-            }
-        }
-        else{
-            $('#water').hide();
-        }*/
-    });
-    
+$(document).ready(function(){	
+  $.post('/getdata', {action:'dialog'}, function(data){
+    DialogID = data.DialogID;
+    if(DialogID == "00_01_01"){
+      $('#1936').fadeIn(200);
+      }
+  });
 	if(use=="0"){
 	use="1";
 	$.ajax({
@@ -31,9 +21,7 @@ $(document).ready(function(){
 	});
 	}
 });
-
 function next(){
-
 	if((JSON.parse(DialogSet)[DialogID].Next["Next1"].Txt=="N"&&option==0)||optChoice=="done"){
 		DialogID = JSON.parse(DialogSet)[DialogID].Next["Next"+index.toString()].ID;
 		optChoice="no";
@@ -53,7 +41,7 @@ function next(){
         });
 	}
 	else if(JSON.parse(DialogSet)[DialogID].Next["Next1"].Txt!="N"&&option==0){
-		for(var i = 1;JSON.parse(DialogSet)[DialogID].Next["Next"+i.toString()].Txt!="N";i++){
+		for(var i = 1;i<3&&JSON.parse(DialogSet)[DialogID].Next["Next"+i.toString()].Txt!="N";i++){
 			diaNumber++;
 			option=1;
 			var content = document.createElement("div");
@@ -86,10 +74,9 @@ function o(){
 			option=0;
 			optChoice="done";
 		}
-
-        $.post('/leave', {action:"dialog", dialogID:DialogID}, function()           {
-            console.log('bye');
-        });
+    $.post('/leave', {action:"dialog", dialogID:DialogID}, function(){
+      console.log('bye');
+      });
 	}
 }
 function NewsetGame()
@@ -112,21 +99,19 @@ function NewsetGame()
 		document.getElementById("all").appendChild(content);
 		diaMaintain();
 	}
-	if(DialogID==""){
+	if(DialogID=="00_06_01"){
 		mapName="fu";
-	}else if(DialogID==""){
+	}else if(DialogID=="00_08_01"){
 		mapName="zheng";
-	}else if(DialogID==""){
-		mapName="jan";
-	}else if(DialogID==""){
+	}else if(DialogID=="00_11_01"){
 		mapName="fu";
-	}else if(DialogID==""){
-		mapName="zheng";
-	}else if(DialogID==""){
+	}else if(DialogID=="00_12_01"){
 		mapName="jan";
-	}else if(DialogID==""){
+	}else if(DialogID=="00_13_01"){
+		mapName="jan";
+	}else if(DialogID=="00_15_01"){
 		mapName="fu";
-	}else if(DialogID==""){
+	}else if(DialogID=="00_16_01"){
 		mapName="zheng";
 	}
 }  
@@ -137,7 +122,6 @@ function NewsetGame()
 	}
  }
  
-    
 
 //var first_span = document.createElement('span');
 //var second_span = document.createElement('span');

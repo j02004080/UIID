@@ -20,6 +20,7 @@
     position: absolute;    
     display: none;
     z-index: 7;
+    width: 100%;
 }
 /*
 .zheng img{
@@ -41,7 +42,7 @@
 		bottom:0%;
 		margin:0 auto;
 		overflow: scroll;
-		z-index: 9;
+		z-index: 4;
         overflow: hidden;
 }
 

@@ -16,6 +16,7 @@
     }
     img{
         max-width: 100%;
+        
     }
     
     body{
@@ -95,6 +96,21 @@
     #collect{
       left: 24vw;
     }
+    
+    #misbox{
+        position: absolute;
+        top:35%;
+        left:25%;
+        font-family: "Microsoft JhengHei";
+    }
+    
+    #mis p{
+        position: absolute;
+        top:25%;
+        left:25%;
+        font-size: 200%;
+        font-family: "Microsoft JhengHei";
+    }
     #collect_img{
       position: absolute;
       width: 100%;
@@ -113,10 +129,21 @@
       border-radius: 50%;  
       z-index: 8;
     }
+    
+    #mis_back{
+      position: absolute;
+      //border: black solid 2px;
+      top: 78vh;
+      width: 20%;
+      height: 11%;
+      margin: 0 40%;
+      border-radius: 50%;  
+      z-index: 8;
+    }
+    
     #text{
       overflow-y: auto;
       position: absolute;
-      border: black solid 2px;
       top: 22%;
       width: 56%;
       max-height: 46%;
@@ -167,7 +194,7 @@
     #s1{
         position:absolute;
         left:5%;
-        top:12%;
+        top:14%;
         font-size: 180%;
         font-weight: 1200;
         font-family: "Microsoft JhengHei";
@@ -176,7 +203,7 @@
     #s2{
         position:absolute;
         left:5%;
-        top:22%;
+        top:24%;
         font-size: 180%;
         font-family: "Microsoft JhengHei";
     }
@@ -200,7 +227,7 @@
     .ON1{
         position:absolute;
         right:33%;
-        top:15%;
+        top:17%;
         width: 10%;
         z-index: 4;
     }
@@ -208,7 +235,7 @@
     .OFF1{
         position:absolute;
         right:15%;
-        top:15%;
+        top:17%;
         width: 12%;
         z-index: 4;
     }
@@ -216,7 +243,7 @@
     .ON2{
         position:absolute;
         right:33%;
-        top:25%;
+        top:27.5%;
         width: 10%;
         z-index: 4;
     }
@@ -224,7 +251,7 @@
     .OFF2{
         position:absolute;
         right:15%;
-        top:25%;
+        top:27.5%;
         width: 12%;
         z-index: 4;
     }
@@ -233,7 +260,7 @@
         position:absolute;
         width:15%;
         right:30%;
-        top:14%;
+        top:15.5%;
         z-index: 3;
     }
     
@@ -241,7 +268,7 @@
         position:absolute;
         width:15%;
         right:30%;
-        top:23.5%;
+        top:26%;
         z-index: 3;
     }
     

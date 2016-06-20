@@ -10,6 +10,9 @@ function StrCount(){
             
             count ="剩於"+ c + "秒回復體力";
             showStr(str);
+            if(str>0){
+                $('.dialog').attr('id', 'all');
+            }
             if(str < 3){
                 if(c <= 0 ){
                 c = 60;
@@ -68,7 +71,7 @@ function showStr(str){
 
 
 $(document).ready(function() {
-   
+    var jinzhi=0;
     if(str < 3){
         showStr(str);
         StrCount();   
@@ -83,7 +86,7 @@ $(document).ready(function() {
   var ani_time = 500;
   var active_id = "0";
   images = [];
-
+    var clary = ["00_04_08", "00_04_11","00_06_03"];
   function preload(){
     for (var i=0; i< arguments.length; i++){
       images[i] = new Image();
@@ -142,12 +145,23 @@ $(document).ready(function() {
         });
 	
 	  var counter = 1;
+    var box = document.getElementById('misbox');
     
-    $.post('/getdata', function(data){
-        counter = parseInt(data.map) + 1;
-    });
+   
+    
+    document.addEventListener("touchmove", function(e){
+      if(jinzhi==0){
+        e.preventDefault();
+        e.stopPropagation();
+        }
+      },false);
     
     $(".mapbut").click(function(){
+         $.post('/getdata', function(data){
+        counter = parseInt(data.map) + 1;
+        box.innerHTML = data.mis[0]; 
+        
+    });
         document.getElementById("shards").src="img/map"+counter+"-06.png";
         $("#shards").show();
         $("#map_back").fadeIn(1000);
@@ -159,16 +173,42 @@ $(document).ready(function() {
     }); 
     
     $(".collectbut").click(function(){
+        jinzhi = 1;
         go("collect", 0, 100, 100); 
     });
     $("#collect_back").click(function(){
+        jinzhi = 0;
         back("collect");
+    });
+    
+    $('#all').click(function(){
+        if(DialogID =="00_02_04" || DialogID== "00_03_06"|| DialogID =="00_03_12")          {
+            $('#all').animate({
+                    height:'0%'},200);
+            $('#map').fadeIn(200, function(){
+                $('#map').fadeOut(200)});
+        }
+        
+        
+        if(DialogID == "00_04_08"|| DialogID== "00_04_11"||DialogID=="00_06_03"){
+            $('#all').animate({
+                    height:'0%'},200);
+        }
+    });
+    $(".misbut").click(function(){
+        go("mis",0, 100, 100);
+    });
+    $("#mis_back").click(function(){
+        back("mis");
     });
 
     $('.jan-boss, .fu-boss, .zheng-boss').click(function(){
             $('#all').animate({
                 height: '40%'},200);
             str = str - 1;
+            if(str==0){
+                $('.dialog').removeAttr('id');
+            }
             setStr(str);
             StrCount();
             
