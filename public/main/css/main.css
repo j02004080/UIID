@@ -61,7 +61,7 @@
     }
     .stuff{
       position: absolute;
-      top: 1.5vh;
+      top: 2vh;
       z-index: 10;
       display: none;
       height: 5px;
@@ -69,12 +69,12 @@
     }  
 
     #map{
-      left: 8vw;
+      left: 9vw;
     }
     #map_back{
       position: absolute;
       //border: black solid 2px;
-      top: 81vh;
+      top: 84vh;
       width: 18%;
       height: 10%;
       margin: 0 41%;
@@ -90,10 +90,10 @@
     }
   
     #mis{
-      left: 16vw;
+      left: 18vw;
     }
     #collect{
-      left: 24vw;
+      left: 27vw;
     }
     #collect_img{
       position: absolute;
@@ -116,10 +116,10 @@
     #text{
       overflow-y: auto;
       position: absolute;
-      border: black solid 2px;
+      //border: black solid 2px;
       top: 22%;
       width: 56%;
-      max-height: 46%;
+      max-height: 48%;
       margin: 0 23%;
       z-index: 8;
     }
