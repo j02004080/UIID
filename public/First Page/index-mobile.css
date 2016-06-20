@@ -1,5 +1,9 @@
   html,body {
   height: 100%;
+  width: 100%;
+}
+html {
+  overflow: auto;
 }
 body{
 	
@@ -57,7 +61,7 @@ body{
   display: none;
 }  
 #sheet form{ 
- margin: 0 40%;
+ margin: 0 28%;
 }
 #test{
   position: absolute;
@@ -66,6 +70,7 @@ body{
   top: 40%;
   margin: 0 40%;
   z-index: 1;
+  border: black solid 2px;
 }
 #test1{
   position: absolute;
@@ -74,6 +79,7 @@ body{
   top: 35%;
   margin: 0 30%;
   z-index: 1;
+  border: black solid 2px;
 }
 #man{
   position: absolute;
