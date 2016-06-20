@@ -43,7 +43,8 @@
 		margin:0 auto;
 		overflow: scroll;
 		z-index: 4;
-        overflow: hidden;
+    overflow: hidden;
+    font-family: "Microsoft JhengHei";
 }
 
 #jan-boss{

@@ -1,5 +1,9 @@
   html,body {
   height: 100%;
+  width: 100%;
+}
+html {
+  overflow: auto;
 }
 body{
 	
@@ -8,6 +12,9 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;  
+}
+img {
+  max-width: 100%;
 }
 #content{
   position: relative;
@@ -34,7 +41,7 @@ body{
 .button {
   position: absolute;
 	margin: 0  auto;
-  margin-top: 30%;
+  margin-top: 20%;
 	width: 100%;
 	height: auto;	  
 }
@@ -57,21 +64,21 @@ body{
   display: none;
 }  
 #sheet form{ 
- margin: 0 40%;
+ margin: 0 28%;
 }
-#test{
+#test_new{
   position: absolute;
   width: 20%;
   height: 4%;
-  top: 50%;
+  top: 45%;
   margin: 0 40%;
   z-index: 1;
 }
-#test1{
+#test_cont{
   position: absolute;
   width: 40%;
-  height: 4%;
-  top: 45%;
+  height: 5%;
+  top: 39%;
   margin: 0 30%;
   z-index: 1;
 }

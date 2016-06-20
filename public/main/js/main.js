@@ -237,17 +237,17 @@ $(document).ready(function() {
 	
 	function back(id){
         
-		var left_d = "8vw";
+		var left_d = "9vw";
         $('.mask').hide();
     if (id==="mission"){
-			left_d = "16vw";
+			left_d = "18vw";
 		}
 		else if (id === "collect"){
-			left_d = "24vw";
+			left_d = "27vw";
 		}
 		
 		$("#"+id).animate({
-          top: "1.5vh",
+          top: "2vh",
           margin: "0 0",
           width: "5px",
           height: "5px",
